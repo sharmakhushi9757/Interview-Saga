@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 
 def main():
-    #im = Image.open("")
+
     st.set_page_config(
     page_title="INTERVIEW SAGA",
     page_icon=":male-technologist:",

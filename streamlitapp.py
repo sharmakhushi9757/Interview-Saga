@@ -2,10 +2,10 @@ import streamlit as st
 from PIL import Image
 
 def main():
-    im = Image.open("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRkkCVpx0nGSVSN9A8xA-VBtnM617YKCWbvg&usqp=CAU")
+    #im = Image.open("")
     st.set_page_config(
     page_title="INTERVIEW SAGA",
-    page_icon=im,
+    page_icon="person_with_resume",
     layout="centered",
     initial_sidebar_state="auto",
     menu_items={

@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 
 def main():
-    im = Image.open("favicon.ico")
+    im = Image.open("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRkkCVpx0nGSVSN9A8xA-VBtnM617YKCWbvg&usqp=CAU")
     st.set_page_config(
     page_title="INTERVIEW SAGA",
     page_icon=im,

@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 
 def main():
-    icon=Image.open("https://icons8.com/icon/mjPRxlOl6Wbb/candidate")
+    icon=Image.open("https://icons8.com/icon/mjPRxlOl6Wbb/candidate.png")
     st.set_page_config(
     page_title="INTERVIEW SAGA",
     page_icon=icon,

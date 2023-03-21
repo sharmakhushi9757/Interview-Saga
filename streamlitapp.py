@@ -5,7 +5,7 @@ def main():
     #im = Image.open("")
     st.set_page_config(
     page_title="INTERVIEW SAGA",
-    page_icon=":dice:",
+    page_icon=":male-technologist:",
     layout="centered",
     initial_sidebar_state="auto",
     menu_items={

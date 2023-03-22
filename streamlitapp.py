@@ -13,12 +13,8 @@ def main():
         'About': "sharmakhushi9757"
     }
 )
-    col1,col2=st.beta_columns([1,20])
-    with col1:
-      st.image('ilogo.png',width=85)
-    with col2:
-      st.title("INTERVIEW SAGA")
     
+    st.title("INTERVIEW SAGA")
     st.write("Welcome to my app!")
 
 if __name__ == "__main__":

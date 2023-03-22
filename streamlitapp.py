@@ -15,8 +15,10 @@ def main():
 )
     
     st.title("INTERVIEW SAGA")
-    st.markdown("# HOME PAGE ")
     st.sidebar.markdown("# HOME PAGE ")
+    def HOME_PAGE():
+        st.markdown("# HOME APGE 🎈")
+        st.sidebar.markdown("# HOME PAGE 🎈")
     def page2():
         st.markdown("# Page 2 ❄️")
         st.sidebar.markdown("# Page 2 ❄️")
@@ -24,7 +26,7 @@ def main():
         st.markdown("# Page 3 🎉")
         st.sidebar.markdown("# Page 3 🎉")
     page_names_to_funcs = {
-    "Main Page": HOME_PAGE,
+    "HOME PAGE": HOME_PAGE,
     "Page 2": page2,
     "Page 3": page3,
 }

@@ -15,7 +15,7 @@ def main():
 )
     col1,mid,col2=st.beta_columns([1,1,20])
     with col1:
-      st.image('logo main.png', width=60)
+      st.image('logo main.png')
     with col2:
       st.title("INTERVIEW SAGA")
     

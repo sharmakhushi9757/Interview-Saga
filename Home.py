@@ -29,7 +29,7 @@ st.set_page_config(page_title="Interview Prep",
 layout="wide",
 initial_sidebar_state="auto",
 multi_app_icon=im,
-ordering=1
+ordering=2
 )
 
 im2=Image.open('Images/resume.png')
@@ -37,7 +37,7 @@ st.set_page_config(page_title="Resume",
 layout="wide",
 initial_sidebar_state="auto",
 multi_app_icon=im2,
-ordering=1
+ordering=3
 )
 
 im3=Image.open('Images/mockiw.png')
@@ -45,7 +45,7 @@ st.set_page_config(page_title="Mock Interview",
 layout="wide",
 initial_sidebar_state="auto",
 multi_app_icon=im3,
-ordering=1
+ordering=4
 )
 
 im4=Image.open('Images/about.png')
@@ -53,7 +53,7 @@ st.set_page_config(page_title="About",
 layout="wide",
 initial_sidebar_state="auto",
 multi_app_icon=im4,
-ordering=1
+ordering=5
 )
 
 if "my_input" not in st.session_state:

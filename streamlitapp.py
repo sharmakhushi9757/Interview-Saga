@@ -16,7 +16,7 @@ def main():
     
     st.title("INTERVIEW SAGA")
     st.markdown("# HOME PAGE ")
-    st.sidebar.markdown("# Main page ")
+    st.sidebar.markdown("# HOME PAGE ")
     def page2():
         st.markdown("# Page 2 ❄️")
         st.sidebar.markdown("# Page 2 ❄️")

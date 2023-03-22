@@ -1,8 +1,10 @@
 import streamlit as st
+from PIL import Image
 
+image = Image.open('interview icon.png')
 st.set_page_config(
     page_title="INTERVIEW SAGA",
-    page_icon="🧊",
+    page_icon=image,
     layout="centered",
     initial_sidebar_state="auto",
     menu_items={
@@ -11,6 +13,8 @@ st.set_page_config(
         'About': "sharmakhushi9757"
     }
 )
+
+
 
 st.title("Main Page")
 st.sidebar.success("Select a page above.")

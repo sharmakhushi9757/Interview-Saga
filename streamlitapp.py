@@ -2,7 +2,6 @@ import streamlit as st
 from PIL import Image
 
 def main():
-  
     st.set_page_config(
     page_title="INTERVIEW SAGA",
     page_icon="🧊",
@@ -14,7 +13,12 @@ def main():
         'About': "sharmakhushi9757"
     }
 )
-    st.title("INTERVIEW SAGA")
+    col1,mid,col2=st.beta_columns([1,1,20])
+    with col1:
+      st.image('logo main.png', width=60)
+    with col2:
+      st.title("INTERVIEW SAGA")
+    
     st.write("Welcome to my app!")
 
 if __name__ == "__main__":

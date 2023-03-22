@@ -13,17 +13,7 @@ st.set_page_config(
         'About': "sharmakhushi9757"
     }
 )
-
-title_container = st.beta_container()
-        col1, col2 = st.beta_columns([1, 20])
-        im = Image.open('home.png')
-        with title_container:
-            with col1:
-                st.image(im, width=64)
-            with col2:
-                st.title("Main Page")
- 
-
+st.title("Main Page")
 st.sidebar.success("Select a page above.")
 
 if "my_input" not in st.session_state:

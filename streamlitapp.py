@@ -13,9 +13,9 @@ def main():
         'About': "sharmakhushi9757"
     }
 )
-    col1,mid,col2=st.beta_columns([1,1,20])
+    col1,col2=st.beta_columns([1,20])
     with col1:
-      st.image('logo main.png',width=85)
+      st.image('ilogo.png',width=85)
     with col2:
       st.title("INTERVIEW SAGA")
     

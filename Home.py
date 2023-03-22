@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image
 
-image = Image.open('Images/question.png')
+image = Image.open('Images/page icon.png')
 st.set_page_config(
     page_title="INTERVIEW SAGA",
     page_icon=image,

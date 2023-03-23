@@ -75,7 +75,10 @@ with tab1:
 with tab2:
    st.header("We will Score your Resume.")
    st.image("https://static.streamlit.io/examples/dog.jpg", width=200)
-   col1, col2 = st.columns([3, 1])
+   st.wite()
+   st.wite()
+   st.wite()
+   col1, col2 = st.columns([2, 2])
    data = np.random.randn(10, 1)
 
    col1.subheader("A wide column with a chart")

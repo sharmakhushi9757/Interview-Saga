@@ -76,13 +76,12 @@ with tab2:
    st.header("We will Score your Resume.")
    st.image("https://static.streamlit.io/examples/dog.jpg", width=200)
    
-   col1, col3 ,col2, = st.columns([4,1,4])
+   col1, col3 ,col2, = st.columns([5,1,6])
    data="When you upload your resume, our AI-powered system analyzes it against key criteria required as per the Industry standards and commit an overall score to your resume. Our resume checker it gives you the fair idea of the resume quality and how it represents you in front of recruiters & hiring manager. We also provide you a detailed resume review and ways to increase the score further. You can also reach out to our professional resume experts to perfect your resume score. "
    col1.subheader("How Resume Checker Works?")
    col1.markdown(data)
    with col2:
-       rr = Image.open('Images/rr.png')
-       st.image(rr,width=200)
+       st.image("Images/rr.png", width=200)
    
 
    

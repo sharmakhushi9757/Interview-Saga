@@ -4,6 +4,7 @@ from streamlit_option_menu import option_menu
 
 st.title("We will help you to build your resume")
 
+
 # 1=sidebar menu, 2=horizontal menu, 3=horizontal menu w/ custom menu
 EXAMPLE_NO = 1
 
@@ -13,8 +14,8 @@ def streamlit_menu(example=1):
         # 1. as sidebar menu
         with st.sidebar:
             selected = option_menu(
-                menu_title="Resume",  # required
-                options=["Builder", "Checker", "Bonus_Tips"],  # required
+                menu_title="Main Menu",  # required
+                options=["Home", "Projects", "Contact"],  # required
                 icons=["house", "book", "envelope"],  # optional
                 menu_icon="cast",  # optional
                 default_index=0,  # optional
@@ -25,7 +26,7 @@ def streamlit_menu(example=1):
         # 2. horizontal menu w/o custom style
         selected = option_menu(
             menu_title=None,  # required
-            options=["Builder", "Checker", "Bonus_Tips"],  # required
+            options=["Home", "Projects", "Contact"],  # required
             icons=["house", "book", "envelope"],  # optional
             menu_icon="cast",  # optional
             default_index=0,  # optional
@@ -37,7 +38,7 @@ def streamlit_menu(example=1):
         # 2. horizontal menu with custom style
         selected = option_menu(
             menu_title=None,  # required
-            options=["Builder", "Checker", "Bonus_Tips"], # required
+            options=["Home", "Projects", "Contact"],  # required
             icons=["house", "book", "envelope"],  # optional
             menu_icon="cast",  # optional
             default_index=0,  # optional
@@ -59,9 +60,9 @@ def streamlit_menu(example=1):
 
 selected = streamlit_menu(example=EXAMPLE_NO)
 
-if selected == "Builder":
+if selected == "Home":
     st.title(f"You have selected {selected}")
-if selected == "Checker":
+if selected == "Projects":
     st.title(f"You have selected {selected}")
-if selected == "Bonus_Tips":
+if selected == "Contact":
     st.title(f"You have selected {selected}")

@@ -14,15 +14,21 @@ st.set_page_config(
         'About': "sharmakhushi9757"
     }
 )
-
-def add_logo(logo_path, width, height):
-    """Read and return a resized logo"""
-    logo = Image.open('Images/logo1.png')
-    modified_logo = logo.resize((width, height))
-    return modified_logo
-
-my_logo = add_logo(logo_path='Images/logo1.png', width=50, height=60)
-st.sidebar.image(my_logo)
+def add_logo():
+    st.markdown(
+        """
+        <style>
+            [data-testid="stSidebarNav"] {
+                background-image: url(http://placekitten.com/200/200);
+                background-repeat: no-repeat;
+                padding-top: 120px;
+                background-position: 20px 20px;
+            }
+   
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
 
 
 st.title("Main Page")

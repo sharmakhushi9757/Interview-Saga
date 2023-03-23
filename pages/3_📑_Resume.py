@@ -68,6 +68,12 @@ tab1, tab2 = st.tabs(["📝 Reume Builder", "🔍 Resume Score Checker"])
 with tab1:
    st.header("We will help you to Build your Resume.")
    st.image("https://static.streamlit.io/examples/cat.jpg", width=200)
+   container = st.container()
+   container.write("This is inside the container")
+   st.write("This is outside the container")
+
+# Now insert some more in the container
+container.write("This is inside too")
 
 with tab2:
    st.header("We will Score your Resume.")

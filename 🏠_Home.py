@@ -14,13 +14,13 @@ st.set_page_config(
         'About': "sharmakhushi9757"
     }
 )
-i = Image.open('Images/logo1.png')
+ig = Image.open('Images/logo1.png')
 def add_logo():
     st.markdown(
         """
         <style>
             [data-testid="stSidebarNav"] {
-                background-image: i;
+                background-image: "ig";
                 background-repeat: no-repeat;
                 padding-top: 120px;
                 background-position: 20px 20px;

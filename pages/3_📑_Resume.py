@@ -1,6 +1,7 @@
 import streamlit as st
 from PIL import Image
 import base64
+import numpy as np
 
 
 image = Image.open('Images/page icon.png')
@@ -68,9 +69,6 @@ tab1, tab2 = st.tabs(["📝 Reume Builder", "🔍 Resume Score Checker"])
 with tab1:
    st.header("We will help you to Build your Resume.")
    st.image("https://static.streamlit.io/examples/cat.jpg", width=200)
-   container = st.container()
-   container.write("This is inside the container")
-   st.write("This is outside the container")
 
 # Now insert some more in the container
 container.write("This is inside too")
@@ -78,6 +76,14 @@ container.write("This is inside too")
 with tab2:
    st.header("We will Score your Resume.")
    st.image("https://static.streamlit.io/examples/dog.jpg", width=200)
+   col1, col2 = st.columns([3, 1])
+   data = np.random.randn(10, 1)
+
+   col1.subheader("A wide column with a chart")
+   col1.line_chart(data)
+
+   col2.subheader("A narrow column with the data")
+   col2.write(data)
 
 
 

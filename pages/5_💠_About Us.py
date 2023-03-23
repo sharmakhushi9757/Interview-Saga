@@ -61,4 +61,4 @@ def add_logo(png_file):
 
 add_logo("Images/logo1.png")
 
-st.title("Contact")
+st.title("About Us")

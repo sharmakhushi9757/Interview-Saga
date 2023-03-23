@@ -62,31 +62,17 @@ add_logo("Images/logo1.png")
 st.title("We will help you to build your resume")
 
 
-tab1, tab2, tab3 = st.tabs(["Cat", "Dog", "Owl"])
+tab1, tab2 = st.tabs(["Reume Builder", "Resume Score Checker"])
 
 with tab1:
-   st.header("A cat")
+   st.header("We will help you to Build your Resume.")
    st.image("https://static.streamlit.io/examples/cat.jpg", width=200)
 
 with tab2:
-   st.header("A dog")
+   st.header("We will Score your Resume.")
    st.image("https://static.streamlit.io/examples/dog.jpg", width=200)
 
-with tab3:
-   st.header("An owl")
-   st.image("https://static.streamlit.io/examples/owl.jpg", width=200)
 
-
-import numpy as np
-
-tab4, tab5 = st.tabs(["📈 Chart", "🗃 Data"])
-data = np.random.randn(10, 1)
-
-tab4.subheader("A tab with a chart")
-tab4.line_chart(data)
-
-tab5.subheader("A tab with the data")
-tab5.write(data)
 
 
 

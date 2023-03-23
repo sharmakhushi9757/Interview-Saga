@@ -16,6 +16,17 @@ st.set_page_config(
     }
 )
 
+streamlit_style = """
+			<style>
+			@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+			html, body, [class*="css"]  {
+			font-family: 'Roboto', sans-serif;
+			}
+			</style>
+			"""
+st.markdown(streamlit_style, unsafe_allow_html=True)
+
 
 @st.cache(allow_output_mutation=True)
 def get_base64_of_bin_file(png_file):
@@ -62,7 +73,7 @@ add_logo("Images/logo1.png")
 st.title("We will help you to build your resume")
 
 
-tab1, tab2 = st.tabs(["Reume Builder", "Resume Score Checker"])
+tab1, tab2 = st.tabs(["📝 Reume Builder", "🔍 Resume Score Checker"])
 
 with tab1:
    st.header("We will help you to Build your Resume.")

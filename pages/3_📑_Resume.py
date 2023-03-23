@@ -77,13 +77,16 @@ with tab2:
    st.image("https://static.streamlit.io/examples/dog.jpg", width=200)
    
    col1, col3 ,col2, = st.columns([3,2,3])
-   data = np.random.randn(10, 1)
-
-   col1.subheader("A wide column with a chart")
+   data="When you upload your resume, our AI-powered system analyzes it against key criteria required as per the Industry standards and commit an overall score to your resume. Our resume checker it gives you the fair idea of the resume quality and how it represents you in front of recruiters & hiring manager. We also provide you a detailed resume review and ways to increase the score further. You can also reach out to our professional resume experts to perfect your resume score. "
+   col1.subheader("How Resume Checker Works?")
    col1.line_chart(data)
+   with col2:
+       rr = Image.open('Images/rr.png')
+       st.image(rr)
+   
 
-   col2.subheader("A narrow column with the data")
-   col2.write(data)
+   
+
 
 
 

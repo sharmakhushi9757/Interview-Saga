@@ -28,7 +28,7 @@ def build_markup_for_logo(
     png_file,
     background_position="50% 10%",
     margin_top="7%",
-    image_width="40%",
+    image_width="30%",
     image_height="",
 ):
     binary_string = get_base64_of_bin_file(png_file)

@@ -59,8 +59,8 @@ def add_logo(png_file):
     )
 
 add_logo("Images/logo1.png")
+st.title("We will help you to build your resume")
 
-import streamlit as st
 
 tab1, tab2, tab3 = st.tabs(["Cat", "Dog", "Owl"])
 
@@ -77,5 +77,16 @@ with tab3:
    st.image("https://static.streamlit.io/examples/owl.jpg", width=200)
 
 
-st.title("We will help you to build your resume")
+import numpy as np
+
+tab4, tab5 = st.tabs(["📈 Chart", "🗃 Data"])
+data = np.random.randn(10, 1)
+
+tab4.subheader("A tab with a chart")
+tab4.line_chart(data)
+
+tab5.subheader("A tab with the data")
+tab5.write(data)
+
+
 

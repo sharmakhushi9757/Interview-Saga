@@ -63,7 +63,7 @@ def add_logo(png_file):
     )
 
 add_logo("Images/logo1.png")
-st.title("We will help you to build your resume")
+st.title("We will help you with your resume.")
 
 
 tab1, tab2 = st.tabs(["📝 Reume Builder", "🔍 Resume Score Checker"])
@@ -75,7 +75,11 @@ with tab1:
 
 
 with tab2:
-   st.header("We will Score your Resume.")
+   st.header("Check Your Resume Score")
+   st.markdown("Are you not getting enough interview calls?")
+   st.markdown("Check your Resume's compatibility & get your Report in just 30 sec.")
+   st.markdown("This is your chance to get 2X more interview calls.")
+
    st.subheader("How Resume Checker Works?")
    data="When you upload your resume, our AI-powered system analyzes it against key criteria required as per the Industry standards and commit an overall score to your resume. Our resume checker it gives you the fair idea of the resume quality and how it represents you in front of recruiters & hiring manager. We also provide you a detailed resume review and ways to increase the score further. You can also reach out to our professional resume experts to perfect your resume score. "
    st.markdown(data)

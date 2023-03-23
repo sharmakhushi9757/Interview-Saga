@@ -25,20 +25,12 @@ def add_logo():
                 background-position: 20px 20px;
               
             }
-             [data-testid="stSidebarNav"]::before {
-                content: "My Company Name";
-                margin-left: 20px;
-                margin-top: 20px;
-                font-size: 30px;
-                position: relative;
-                top: 100px;
-            }
-   
+             
         </style>
         """,
         unsafe_allow_html=True,
     )
-
+add_logo()
 
 st.title("Main Page")
 st.sidebar.success("Select a page above.")

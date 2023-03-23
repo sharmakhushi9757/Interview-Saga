@@ -75,7 +75,8 @@ with tab1:
 with tab2:
    st.header("We will Score your Resume.")
    st.image("https://static.streamlit.io/examples/dog.jpg", width=200)
-   
+   st.image("Images/rr.png")
+   st.image("Images/rr.png", width=200)
    col1,col2, = st.columns([1,5])
    with col2:
        st.image("Images/rr.png", width=200)

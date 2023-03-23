@@ -14,23 +14,7 @@ st.set_page_config(
         'About': "sharmakhushi9757"
     }
 )
-def add_logo():
-    st.markdown(
-        """
-        <style>
-            [data-testid="stSidebarNav"] {
-                background-image: url(http://placekitten.com/200/200);
-                background-repeat: no-repeat;
-                padding-top: 120px;
-                background-position: 20px 20px;
-              
-            }
-             
-        </style>
-        """,
-        unsafe_allow_html=True,
-    )
-add_logo()
+st.sidebar.image("Images/logo1.png", use_column_width=True)
 
 st.title("Main Page")
 st.sidebar.success("Select a page above.")

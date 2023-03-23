@@ -76,6 +76,7 @@ with tab1:
 
 with tab2:
    st.header("Check Your Resume Score")
+   st.image("https://learning-static.storage.googleapis.com/rs/s/shine-resume/images/score-checker/parameters-image.png")
    st.markdown("Are you not getting enough interview calls? 📞")
    st.markdown("Check your Resume's compatibility & get your Report in just 30 sec. ⌛")
    st.markdown("This is your chance to get 2X more interview calls. ")

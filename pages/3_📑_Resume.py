@@ -70,8 +70,7 @@ with tab1:
    st.header("We will help you to Build your Resume.")
    st.image("https://static.streamlit.io/examples/cat.jpg", width=200)
 
-# Now insert some more in the container
-container.write("This is inside too")
+
 
 with tab2:
    st.header("We will Score your Resume.")

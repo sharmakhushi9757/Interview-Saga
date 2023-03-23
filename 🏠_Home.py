@@ -3,7 +3,6 @@ from PIL import Image
 
 
 image = Image.open('Images/page icon.png')
-add_logo()
 st.set_page_config(
     page_title="INTERVIEW SAGA",
     page_icon=image,

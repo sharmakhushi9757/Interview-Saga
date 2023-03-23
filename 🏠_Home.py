@@ -21,7 +21,7 @@ def add_logo():
         """
         <style>
             [data-testid="stSidebarNav"] {
-                background-image: url(http://placekitten.com/200/200);
+                background-image: ig;
                 background-repeat: no-repeat;
                 padding-top: 120px;
                 background-position: 20px 20px;

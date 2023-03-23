@@ -62,3 +62,7 @@ def add_logo(png_file):
 add_logo("Images/logo1.png")
 
 st.title("About Us")
+d="Our prime objective is to develop full fledged website application that helps people to get information about the interview preparation of different organisation.Creating a platform to get access about most frequent asked in technology jobs. We help you polish your skills and get ready for the job, whether you are a fresher college graduate or a working professional." 
+
+st.markdown(d)
+

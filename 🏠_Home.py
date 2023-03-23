@@ -15,6 +15,11 @@ st.set_page_config(
     }
 )
 
+def add_logo(logo_path, width, height):
+    logo = Image.open('Images/logo1.png')
+    modified_logo = logo.resize((width, height))
+    return modified_logo
+
 st.sidebar.image(add_logo(logo_path="Images/logo1.png", width=50, height=60))
 
 st.title("Main Page")

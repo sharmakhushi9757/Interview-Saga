@@ -37,7 +37,7 @@ def add_logo():
         """,
         unsafe_allow_html=True,
     )
-
+add_logo()
 st.title("Main Page")
 st.sidebar.success("Select a page above.")
 

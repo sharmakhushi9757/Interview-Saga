@@ -1,6 +1,6 @@
 import streamlit as st
 from PIL import Image
-st.sidebar.image("Images/logo1.png", use_column_width=True)
+
 
 image = Image.open('Images/page icon.png')
 st.set_page_config(
@@ -14,7 +14,7 @@ st.set_page_config(
         'About': "sharmakhushi9757"
     }
 )
-
+st.sidebar.image("Images/logo1.png", use_column_width=True)
 
 st.title("Main Page")
 st.sidebar.success("Select a page above.")

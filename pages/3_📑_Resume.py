@@ -63,7 +63,10 @@ def add_logo(png_file):
     )
 
 add_logo("Images/logo1.png")
-st.title("We will help you with your resume.")
+
+
+st.title("The Ultimate Resume Builder & Score Checker")
+
 
 
 tab1, tab2 = st.tabs(["📝 Reume Builder", "🔍 Resume Score Checker"])

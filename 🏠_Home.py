@@ -60,16 +60,10 @@ def add_logo(png_file):
 
 add_logo("Images/logo1.png")
 
-page_bg="""
-    <style>
-        [data-testid="stAppViewContainer"]{
-        background-color:#ADD8E6;
-        }
-        </style>"""
-st.markdown(page_bg,unsafe_allow_html=True)
 
 
 
-st.title("Main Page")
+st.header("Everything you need to crack your")
+st.subheader("Next Interview")
 st.sidebar.success("Select a page above.")
 st.image("Images/backk.png")

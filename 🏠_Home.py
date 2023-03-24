@@ -1,6 +1,7 @@
 import streamlit as st
 from PIL import Image
 import base64
+import numpy as np
 
 
 image = Image.open('Images/page icon.png')

@@ -78,9 +78,14 @@ with tab1:
    resume_data="For most job-seekers, a good resume is what stands between a dream job and Choice D. Get your resume right, and you’ll be getting replies from every other company you apply to.If your resume game is weak, though, you’ll end up sitting around for weeks, maybe even months, before you even get a single response.So you’re probably wondering how you can write a resume that leads to HR managers inviting you to interviews daily.Well, you’ve come to the right place!In this guide, we’re going to teach you everything you need to know about how to make a resume, including:"
    st.markdown(resume_data)
    st.subheader("✔️ How to Write a Resume in 9 Steps:")
-   [data-testid="stVerticalBlock"] > [style*="flex-direction: column;"] > [data-testid="stVerticalBlock"] {
-        border: 2px black;
-    }
+   st.write('''<style>
+    [data-testid="stHorizontalBlock"]:has(div.PortMarker) [data-testid="stMarkdownContainer"] p { 
+        margin: 0px 0px 0.2rem; 
+        color: #ff0000;
+        border:2px black;
+    }        
+    </style>''', unsafe_allow_html=True)
+
    with st.container():
        st.write("1. Pick the Right Resume Format & Layout")
        st.write("2. Mention Your Personal Details & Contact Information")

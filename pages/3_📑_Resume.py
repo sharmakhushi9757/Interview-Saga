@@ -106,7 +106,29 @@ with tab1:
    st.markdown("6. **Keep your education short and to the point.** Your most recent and highest degree is more than enough for a strong education section. We recommend making a more detailed education section only if you’re a recent graduate with barely any work experience. ")
    st.markdown("7. **Take advantage of optional resume sections.** Optional sections like languages, hobbies, certifications, independent projects, and the sorts, can be what sets you apart from other candidates with similar skills and experience.")
    st.markdown("8. **Don’t forget about the cover letter.** Cover letters do matter in 2023 so you should definitely include one. To make the most out of your cover letter, check out this detailed guide on how to write a cover letter.")
+   def get_st_button_a_tag(url_link, button_name):
+        """
+        generate html a tag
+        :param url_link:
+        :param button_name:
+        :return:
+        """
+        return f'''
+        <a href={url_link}><button style="
+        fontWeight: 400;
+        padding: 0.25rem 0.75rem;
+        borderRadius: 0.25rem;
+        margin: 0px;
+        text-align: center;
+        lineHeight: 1.6;
+        width: auto;
+        userSelect: none;
+        backgroundColor: #FFFFFF;
+        border: 1px solid rgba(49, 51, 63, 0.2);">{button_name}</button></a>
+        '''
 
+   st.markdown(get_st_button_a_tag('https://novoresume.com/resume-templates', 'Browse Templates'), unsafe_allow_html=True) 
+  
 
 
 

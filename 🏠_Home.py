@@ -72,9 +72,9 @@ st.image("Images/backk.png")
 
 cc1,cc2,cc3=st.columns(3)
 with cc1:
-    st.image("https://pin.it/6YIKHlm",caption="Practice Set")
+    st.image("https://i.pinimg.com/564x/56/65/a1/5665a13e627cef12d66e88a2ed1cb019.jpg",caption="Practice Set")
 with cc2:
-    st.image("https://pin.it/i2D1dXL ",caption="Resume Building")
+    st.image("https://i.pinimg.com/564x/43/83/4c/43834c4236b7fd1d4e799f55ce32df9e.jpg",caption="Resume Building")
 with cc3:
-    st.image(" https://pin.it/2MxxZP5",caption="Mock Interview")
+    st.image("https://i.pinimg.com/564x/c1/49/a0/c149a096cc84eb5972743be15b952f68.jpg",caption="Mock Interview")
     

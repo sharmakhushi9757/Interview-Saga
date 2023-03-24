@@ -98,7 +98,7 @@ with tab1:
    st.markdown("Before we go into detail about how you should make a resume, here’s a summary of the most important steps and tips to keep in mind: ")
    expander = st.expander("See Sample Resume")
    expander.image("Images/resumeexample.png")
-   st.markdown("1. *Choose a resume format carefully.* In 99% of the cases, we recommend the chronological format. ")
+   st.markdown("1. **Choose a resume format carefully.** In 99% of the cases, we recommend the chronological format. ")
    st.markdown("2. *Add the right contact details.* Leave your headshot out and make sure to include your job title, a professional email address, and relevant links (e.g. your LinkedIn profile, online portfolio, website, etc.). ")
    st.markdown("3. *Write an impactful resume summary.* Unless you’re an entry-level professional, always go for a resume summary (also known as a career summary). Done right, it’s your chance to get hiring managers to go through the rest of your resume in detail. ")
    st.markdown("4. *Pay attention to your work experience section.* Take your work experience section from OK-ish to exceptional by tailoring it to the job ad, making your achievements quantifiable, and using action verbs and power words. ")

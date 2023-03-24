@@ -83,7 +83,7 @@ with tab1:
         border: 2px black;
     }
     </style>''',unsafe_allow_html=True)
-
+   
    with st.container():
        st.write("1. Pick the Right Resume Format & Layout")
        st.write("2. Mention Your Personal Details & Contact Information")
@@ -94,8 +94,11 @@ with tab1:
        st.write("7. Tailor Your Information For the Job Ad")
        st.write("8. Craft a Convincing Cover Letter")
        st.write("9. Proofread Your Resume and Cover Letter")
-        
-   
+   st.subheader("📄 How to Make a Resume (The Right Way!)")
+   st.markdown("Before we go into detail about how you should make a resume, here’s a summary of the most important steps and tips to keep in mind: ")
+   expander = st.expander("See Sample Resume")
+   expander.image("Images/resumeexample.png")
+
 
 
 

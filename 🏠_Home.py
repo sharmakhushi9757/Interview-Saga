@@ -69,9 +69,9 @@ st.subheader(":blue[Now!! All available at one place]")
 st.sidebar.success("Select a page above.")
 
 st.image("Images/backk.png")
-st.text("")
+st.write("***")
 st.markdown("**Interview Saga Will provide you Interview required stuff together all at one place. It can enhance one's capabilities to crack their dream job. Our Vision is to help every individual in grab their dream company.**")
-st.text("")
+st.write("***")
 cc1,cc2,cc3=st.columns(3)
 with cc1:
     st.image("https://i.pinimg.com/564x/56/65/a1/5665a13e627cef12d66e88a2ed1cb019.jpg",caption="Practice Set")

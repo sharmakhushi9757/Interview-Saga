@@ -5,6 +5,7 @@ import pandas as pd
 from io import StringIO
 import numpy as np
 import webbrowser
+from link_button import link_button
 
 image = Image.open('Images/page icon.png')
 st.set_page_config(
@@ -96,8 +97,9 @@ with tab2:
    url = '(https://resumeworded.com/upload-resume'
    if st.button('Upload Resume'):
     webbrowser.open_new_tab(url)
-        
-   st.write("check out this [link](https://resumeworded.com/upload-resume)")
+   
+   link_button('Click Me!', 'https://resumeworded.com/upload-resume')     
+   st.write("[check out](https://resumeworded.com/upload-resume)")
         
     
         

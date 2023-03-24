@@ -94,26 +94,7 @@ with tab2:
    st.markdown(data)
    st.image("Images/rr.png")
     
-   uploaded_file = st.file_uploader("Upload Resume")
-   if uploaded_file is not None:
-        # To read file as bytes:
-        bytes_data = uploaded_file.getvalue()
-        
-      
-
-        # To convert to a string based IO:
-        stringio = StringIO(uploaded_file.getvalue().decode("utf-8"))
-        
-
-        
-
-        # To read file as string:
-        string_data = stringio.read()
-        st.write(string_data)
-       
-
-        # Can be used wherever a "file-like" object is accepted:
-        dataframe = pd.read_csv(uploaded_file)
+   st.write("check out this [link](https://resumeworded.com/upload-resume)")
         
     
         

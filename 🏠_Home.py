@@ -64,4 +64,4 @@ add_logo("Images/logo1.png")
 
 st.title("Main Page")
 st.sidebar.success("Select a page above.")
-st.image("https://assets.interviewbit.com/assets/ibpp/banner-large-figure-b0a3ed9907d90e08b1c0132cf6cca0ddb5fae5ad74fe96bc3551b0f6dc1e7333.svg.gz")
+st.image("Images/backk.png")

@@ -79,7 +79,7 @@ with cc3:
     st.image("https://i.pinimg.com/564x/c1/49/a0/c149a096cc84eb5972743be15b952f68.jpg",caption="Mock Interview")
 
 
-st.write("**Our Users Have cracked interviews at :**")
+st.subheader("Our Users Have cracked interviews at :")
 
 cl1,cl2,cl3,cl4,cl5=st.columns(5)
 with cl1:

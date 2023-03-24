@@ -118,6 +118,37 @@ with t1:
         st.markdown("It is the best website I have ever came across for interview preparation. I was just practicing for 18 days and I had an offer at hand from a very good product company.The website has been built in a very unique way, it engages you and you learn a lot, you gain a lot of confidence. Today(my 22nd day with the website) when I am writing this review, I have offer from 2 big companies. I was preparing for a long time but never had the confidence to apply in any of big companies. The moment I joined interview bit things started going in a fast forward mode, suddenly I am not afraid anymore. It makes you a better programmer thanks to interview Saga.")
     with map2:
         st.image("Images/karthik.jpeg")
+with t2:
+    map3,map4=st.columns(2)
+    with map3:
+        st.markdown("I can share my reviews based on my last 2 months experience on InterviewBit which helped me landed a job in Paytm :).A super interacting platform which intelligently allows us to customize our preparation schedule based on our time bandwidth. A simple and beautiful interface which gives me feeling as if I am being coached by real instructor.")
+    with map4:
+        st.image("Images/anjali.jpeg")
+with t3:
+    map3,map4=st.columns(2)
+    with map3:
+        st.markdown("")
+    with map4:
+        st.image("Images/aakansha.jpeg")
+with t4:
+    map3,map4=st.columns(2)
+    with map3:
+        st.markdown("")
+    with map4:
+        st.image("Images/harsh.jpeg")
+with t5:
+    map3,map4=st.columns(2)
+    with map3:
+        st.markdown("")
+    with map4:
+        st.image("Images/kamya.jpeg")
+with t6:
+    map3,map4=st.columns(2)
+    with map3:
+        st.markdown("")
+    with map4:
+        st.image("")
+        
       
         
         

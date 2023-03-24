@@ -78,15 +78,21 @@ with tab1:
    resume_data="For most job-seekers, a good resume is what stands between a dream job and Choice D. Get your resume right, and you’ll be getting replies from every other company you apply to.If your resume game is weak, though, you’ll end up sitting around for weeks, maybe even months, before you even get a single response.So you’re probably wondering how you can write a resume that leads to HR managers inviting you to interviews daily.Well, you’ve come to the right place!In this guide, we’re going to teach you everything you need to know about how to make a resume, including:"
    st.markdown(resume_data)
    st.subheader("✔️ How to Write a Resume in 9 Steps:")
-   st.write("1. Pick the Right Resume Format & Layout")
-   st.write("2. Mention Your Personal Details & Contact Information")
-   st.write("3. Use a Resume Summary or Objective")
-   st.write("4. List Your Work Experience & Achievements")
-   st.write("5. Mention Your Top Soft & Hard Skills")
-   st.write("6. Include Additional Resume Sections (Languages, Hobbies, etc.)")
-   st.write("7. Tailor Your Information For the Job Ad")
-   st.write("8. Craft a Convincing Cover Letter")
-   st.write("9. Proofread Your Resume and Cover Letter")
+   with st.container():
+       st.write("1. Pick the Right Resume Format & Layout")
+       st.write("2. Mention Your Personal Details & Contact Information")
+       st.write("3. Use a Resume Summary or Objective")
+       st.write("4. List Your Work Experience & Achievements")
+       st.write("5. Mention Your Top Soft & Hard Skills")
+       st.write("6. Include Additional Resume Sections (Languages, Hobbies, etc.)")
+       st.write("7. Tailor Your Information For the Job Ad")
+       st.write("8. Craft a Convincing Cover Letter")
+       st.write("9. Proofread Your Resume and Cover Letter")
+        
+   [data-testid="some_container_tag"] {
+        outline: 1px solid black;
+        border-radius: 1px;}
+
 
 
 with tab2:

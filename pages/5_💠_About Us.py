@@ -65,4 +65,14 @@ st.title("About Us")
 d="Our prime objective is to develop full fledged website application that helps people to get information about the interview preparation of different organisation.Creating a platform to get access about most frequent asked in technology jobs. We help you polish your skills and get ready for the job, whether you are a fresher college graduate or a working professional." 
 
 st.markdown(d)
+st.subheader("Our key features are :")
+col1, col2, col3 = st.columns(3)
+with col1:
+   st.image("Images/exp.jpeg",caption='Summarised Question Set')
+
+with col2:
+   st.image("Images/resm.jpeg",caption='Resume Building')
+
+with col3:
+   st.image("Images/mock.jpeg",caption='Mock Interviews')
 

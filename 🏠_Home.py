@@ -70,7 +70,11 @@ st.sidebar.success("Select a page above.")
 
 st.image("Images/backk.png")
 st.write("\n")
+st.write("\n")
+st.write("\n")
 st.markdown("**Interview Saga Will provide you Interview required stuff together all at one place. It can enhance one's capabilities to crack their dream job. Our Vision is to help every individual in grab their dream company.**")
+st.write("\n")
+st.write("\n")
 st.write("\n")
 cc1,cc2,cc3=st.columns(3)
 with cc1:

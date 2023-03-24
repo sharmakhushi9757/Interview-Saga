@@ -79,12 +79,10 @@ with tab1:
    st.markdown(resume_data)
    st.subheader("✔️ How to Write a Resume in 9 Steps:")
    st.write('''<style>
-    [data-testid="stHorizontalBlock"]:has(div.PortMarker) [data-testid="stMarkdownContainer"] p { 
-        margin: 0px 0px 0.2rem; 
-        color: #ff0000;
-        border:2px black;
-    }        
-    </style>''', unsafe_allow_html=True)
+   [data-testid="stVerticalBlock"] > [style*="flex-direction: column;"] > [data-testid="stVerticalBlock"] {
+        border: 2px black;
+    }
+    </style>''',unsafe_allow_html=True)
 
    with st.container():
        st.write("1. Pick the Right Resume Format & Layout")

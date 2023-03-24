@@ -5,7 +5,6 @@ import pandas as pd
 from io import StringIO
 import numpy as np
 import webbrowser
-from link_button import link_button
 
 image = Image.open('Images/page icon.png')
 st.set_page_config(

@@ -60,7 +60,10 @@ def add_logo(png_file):
 
 add_logo("Images/logo1.png")
 
-
+[theme]
+backgroundColor="#87CEEB"
+textColor="#262730"
+font="sans serif"
 
 st.title("Main Page")
 st.sidebar.success("Select a page above.")

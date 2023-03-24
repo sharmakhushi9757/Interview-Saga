@@ -1,1 +1,1 @@
- from streamlit_lottie import st_lottie
+import streamlit_lottie.st_lottie

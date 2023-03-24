@@ -60,10 +60,15 @@ def add_logo(png_file):
 
 add_logo("Images/logo1.png")
 
-[theme]
-backgroundColor="#87CEEB"
-textColor="#262730"
-font="sans serif"
+page_bg="""
+    <style>
+        [data-testid="stAppViewContainer"]{
+        background-color:;
+        }
+        </style>"""
+st.markdown(page_bg,unsafe_allow_html=True)
+
+
 
 st.title("Main Page")
 st.sidebar.success("Select a page above.")

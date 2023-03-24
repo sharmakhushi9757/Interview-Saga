@@ -110,6 +110,7 @@ with cl5:
 st.write("---")
 st.write("\n")
 st.write("\n")
+st.write("\n")
 st.subheader("Our Alumni Stories ")
 t1,t2,t3,t4,t5,t6 = st.tabs(["Story1", "Story2", "Story3","Story4","Story5","Story6"])
 with t1:

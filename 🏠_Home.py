@@ -63,7 +63,7 @@ add_logo("Images/logo1.png")
 
 
 
-st.header("Everything you need to crack your")
-st.subheader("Next Interview")
+st.header("Everything you need to crack your next interview")
+st.subheader("Now!! All at one place")
 st.sidebar.success("Select a page above.")
 st.image("Images/backk.png")

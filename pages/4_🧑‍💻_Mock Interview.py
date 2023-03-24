@@ -63,6 +63,3 @@ add_logo("Images/logo1.png")
 
 st.title("Schedule your mock interview here!!")
 
-
-
-from streamlit_lottie import st_lottie

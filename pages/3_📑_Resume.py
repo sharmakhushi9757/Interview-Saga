@@ -98,6 +98,14 @@ with tab1:
    st.markdown("Before we go into detail about how you should make a resume, here’s a summary of the most important steps and tips to keep in mind: ")
    expander = st.expander("See Sample Resume")
    expander.image("Images/resumeexample.png")
+   st.markdown("1. *Choose a resume format carefully.* In 99% of the cases, we recommend the chronological format. ")
+   st.markdown("2. *Add the right contact details.* Leave your headshot out and make sure to include your job title, a professional email address, and relevant links (e.g. your LinkedIn profile, online portfolio, website, etc.). ")
+   st.markdown("3. *Write an impactful resume summary.* Unless you’re an entry-level professional, always go for a resume summary (also known as a career summary). Done right, it’s your chance to get hiring managers to go through the rest of your resume in detail. ")
+   st.markdown("4. *Pay attention to your work experience section.* Take your work experience section from OK-ish to exceptional by tailoring it to the job ad, making your achievements quantifiable, and using action verbs and power words. ")
+   st.markdown("5. *Add the right skills for the job.* Keep this important section relevant by only including soft and hard skills that are required for the position. Deeper into the article, we’ll show you just how to do that!  ")
+   st.markdown("6. *Keep your education short and to the point.* Your most recent and highest degree is more than enough for a strong education section. We recommend making a more detailed education section only if you’re a recent graduate with barely any work experience. ")
+   st.markdown("7. *Take advantage of optional resume sections.* Optional sections like languages, hobbies, certifications, independent projects, and the sorts, can be what sets you apart from other candidates with similar skills and experience.")
+   st.markdown("8. *Don’t forget about the cover letter.* Cover letters do matter in 2023 so you should definitely include one. To make the most out of your cover letter, check out this detailed guide on how to write a cover letter.")
 
 
 

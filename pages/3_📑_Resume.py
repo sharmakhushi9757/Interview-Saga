@@ -93,9 +93,6 @@ with tab2:
    data="When you upload your resume, our AI-powered system analyzes it against key criteria required as per the Industry standards and commit an overall score to your resume. Our resume checker it gives you the fair idea of the resume quality and how it represents you in front of recruiters & hiring manager. We also provide you a detailed resume review and ways to increase the score further. You can also reach out to our professional resume experts to perfect your resume score. "
    st.markdown(data)
    st.image("Images/rr.png")
-   url = '(https://resumeworded.com/upload-resume'
-   if st.button('Upload Resume'):
-    webbrowser.open_new_tab(url)
    
    def get_st_button_a_tag(url_link, button_name):
     """
@@ -110,6 +107,7 @@ with tab2:
     padding: 0.25rem 0.75rem;
     borderRadius: 0.25rem;
     margin: 0px;
+    align: center;
     lineHeight: 1.6;
     width: auto;
     userSelect: none;
@@ -118,7 +116,7 @@ with tab2:
     '''
 
    st.markdown(get_st_button_a_tag('https://resumeworded.com/upload-resume', 'Upload Resume'), unsafe_allow_html=True) 
-   st.write("[check out](https://resumeworded.com/upload-resume)")
+  
         
     
         

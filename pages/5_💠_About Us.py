@@ -76,3 +76,21 @@ with col2:
 with col3:
    st.image("Images/mock.jpeg",caption='Mock Interviews')
 
+
+
+st.subheader(":mailbox: Get In Touch With Us!")
+
+
+contact_form = """
+<form action="https://formsubmit.co/YOUREMAIL@EMAIL.COM" method="POST">
+     <input type="hidden" name="_captcha" value="false">
+     <input type="text" name="name" placeholder="Your name" required>
+     <input type="email" name="email" placeholder="Your email" required>
+     <textarea name="message" placeholder="Your message here"></textarea>
+     <button type="submit">Send</button>
+</form>
+"""
+
+st.markdown(contact_form, unsafe_allow_html=True)
+
+

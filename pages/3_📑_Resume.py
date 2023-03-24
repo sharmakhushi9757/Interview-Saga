@@ -73,7 +73,9 @@ tab1, tab2 = st.tabs(["📝 Reume Builder", "🔍 Resume Score Checker"])
 
 with tab1:
    st.header("How to Make a Resume in 2023 | Beginner's Guide")
-   st.image("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNOvrrsTDVRFZARBMo8-Vk3FIOVS7go2tVRA&usqp=CAU")
+   c1,c2,c3=st.columns(3)
+   with c2:
+       st.image("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNOvrrsTDVRFZARBMo8-Vk3FIOVS7go2tVRA&usqp=CAU",caption="Make StandOut Resume with us")
    
    resume_data="For most job-seekers, a good resume is what stands between a dream job and Choice D. Get your resume right, and you’ll be getting replies from every other company you apply to.If your resume game is weak, though, you’ll end up sitting around for weeks, maybe even months, before you even get a single response.So you’re probably wondering how you can write a resume that leads to HR managers inviting you to interviews daily.Well, you’ve come to the right place!In this guide, we’re going to teach you everything you need to know about how to make a resume, including:"
    st.markdown(resume_data)

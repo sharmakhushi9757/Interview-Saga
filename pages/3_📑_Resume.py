@@ -107,7 +107,7 @@ with tab2:
     padding: 0.25rem 0.75rem;
     borderRadius: 0.25rem;
     margin: 0px;
-    align: center;
+    text-align: center;
     lineHeight: 1.6;
     width: auto;
     userSelect: none;

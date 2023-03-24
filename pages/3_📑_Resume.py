@@ -73,7 +73,7 @@ tab1, tab2 = st.tabs(["📝 Reume Builder", "🔍 Resume Score Checker"])
 
 with tab1:
    st.header("How to Make a Resume in 2023 | Beginner's Guide")
-   c1,c2,c3=st.columns(3)
+   c1,c2,c3=st.columns([1,4,1])
    with c2:
        st.image("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNOvrrsTDVRFZARBMo8-Vk3FIOVS7go2tVRA&usqp=CAU",caption="Make StandOut Resume with us")
    

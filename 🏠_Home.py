@@ -90,6 +90,8 @@ with cc2:
 with cc3:
     st.image("https://i.pinimg.com/564x/c1/49/a0/c149a096cc84eb5972743be15b952f68.jpg",caption="Mock Interview")
 
+st.write("\n")
+st.write("\n")
 st.write("---")
 st.subheader("Our Users Have cracked interviews at :")
 

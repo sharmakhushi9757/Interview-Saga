@@ -89,9 +89,16 @@ with tab1:
        st.write("8. Craft a Convincing Cover Letter")
        st.write("9. Proofread Your Resume and Cover Letter")
         
-   [data-testid="some_container_tag"] {
-        outline: 1px solid black;
-        border-radius: 1px;}
+   st.markdown(
+        """
+    <style>
+        div[data-testid="stVerticalBlock"] div[style*="flex-direction: column;"] div[data-testid="stVerticalBlock"] {
+            border: 1px solid blck;
+        }
+    </style>
+    """,
+        unsafe_allow_html=True,
+    )
 
 
 

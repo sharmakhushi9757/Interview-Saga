@@ -69,26 +69,28 @@ st.subheader(":blue[Now!! All available at one place]")
 st.sidebar.success("Select a page above.")
 st.image("Images/backk.png")
 
+import time
+import requests
+from streamlit_lottie import st_lottie
+from streamlit_lottie import st_lottie_spinner
 
-progress_bar = st.progress(0)
-status_text = st.empty()
-chart = st.line_chart(np.random.randn(10, 2))
 
-for i in range(100):
-    # Update progress bar.
-    progress_bar.progress(i + 1)
+def load_lottieurl(url: str):
+    r = requests.get(url)
+    if r.status_code != 200:
+        return None
+    return r.json()
 
-    new_rows = np.random.randn(10, 2)
 
-    # Update status text.
-    status_text.text(
-        'The latest random number is: %s' % new_rows[-1, 1])
+lottie_url_hello = "https://assets5.lottiefiles.com/packages/lf20_V9t630.json"
+lottie_url_download = "https://assets4.lottiefiles.com/private_files/lf30_t26law.json"
+lottie_hello = load_lottieurl(lottie_url_hello)
+lottie_download = load_lottieurl(lottie_url_download)
 
-    # Append data to the chart.
-    chart.add_rows(new_rows)
 
-    # Pretend we're doing some computation that takes time.
-    time.sleep(0.1)
+st_lottie(lottie_hello, key="hello")
 
-status_text.text('Done!')
-st.balloons()
+if st.button("Download"):
+    with st_lottie_spinner(lottie_download, key="download"):
+        time.sleep(5)
+    st.balloons()

@@ -4,7 +4,7 @@ import base64
 import pandas as pd
 from io import StringIO
 import numpy as np
-
+import webbrowser
 
 image = Image.open('Images/page icon.png')
 st.set_page_config(
@@ -93,8 +93,9 @@ with tab2:
    data="When you upload your resume, our AI-powered system analyzes it against key criteria required as per the Industry standards and commit an overall score to your resume. Our resume checker it gives you the fair idea of the resume quality and how it represents you in front of recruiters & hiring manager. We also provide you a detailed resume review and ways to increase the score further. You can also reach out to our professional resume experts to perfect your resume score. "
    st.markdown(data)
    st.image("Images/rr.png")
-   
-   st.write(st.botton("check out this [link](https://resumeworded.com/upload-resume)"))
+   url = '(https://resumeworded.com/upload-resume'
+   if st.button('Upload Resume'):
+    webbrowser.open_new_tab(url)
         
    st.write("check out this [link](https://resumeworded.com/upload-resume)")
         

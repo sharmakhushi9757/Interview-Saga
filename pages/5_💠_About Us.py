@@ -76,7 +76,7 @@ with col2:
 with col3:
    st.image("Images/mock.jpeg",caption='Mock Interviews')
 
-st.markdown("""---""")
+components.html("""<hr style="height:10px;border:none;color:#333;background-color:#333;" /> """)
 
 st.subheader(":mailbox: Get In Touch With Us!")
 

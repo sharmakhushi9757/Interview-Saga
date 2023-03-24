@@ -68,7 +68,7 @@ st.markdown(d)
 st.subheader("Our key features are :")
 col1, col2, col3 = st.columns(3)
 with col1:
-   st.image("Images/p.jpg",caption='Summarised Question Set')
+   st.image("Images/prepp.jpeg",caption='Summarised Question Set')
 
 with col2:
    st.image("Images/resm.jpeg",caption='Resume Building')

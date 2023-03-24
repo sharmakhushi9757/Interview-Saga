@@ -65,15 +65,13 @@ add_logo("Images/logo1.png")
 st.title("Main Page")
 st.sidebar.success("Select a page above.")
 
-with st.container():
-   page_bg_img = '''
+page_bg_img = '''
     <style>
         body {
         background-image: url("https://images.unsplash.com/photo-1542281286-9e0a16bb7366");
         background-size: cover;
         }
     </style>
-    '''
-   
-   
-   st.markdown(page_bg_img, unsafe_allow_html=True)
+'''
+
+st.markdown(page_bg_img, unsafe_allow_html=True)

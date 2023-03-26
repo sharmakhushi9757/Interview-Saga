@@ -79,22 +79,6 @@ with st.form("Book Your Interview Here!!",clear_on_submit=True):
    Role = st.selectbox('Select Role',('Software Developer', 'Data Science', 'Data Analytics','Python Developer','Java Developer'))
    submitted = st.form_submit_button("Submit")
    if submitted:
-       email_from = '1900300100105@ipec.org.in'
-       password = 'Kan2002@'
-       email_to = 'sharmakhushi9757@gmail.com'
-
-        # Plain Text string as the email message
-       email_string = 'This is a test email sent by Python.'
-
-        # Connect to the Gmail SMTP server and Send Email
-          # Create a secure default settings context
-       context = ssl.create_default_context()
-          # Connect to Gmail's SMTP Outgoing Mail server with such context
-       with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
-            # Provide Gmail's login information
-            server.login(email_from, password)
-            # Send mail with from_addr, to_addrs, msg, which were set up as variables above
-            server.sendmail(email_from, email_to, email_string)
        st.write("Congrts!! you have booked your interview on :" ,sch,"at",tm,"You will receive further details via mail.")
 
     

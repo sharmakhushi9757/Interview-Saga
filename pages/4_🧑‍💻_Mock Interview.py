@@ -74,7 +74,7 @@ with st.form("Book Your Interview Here!!"):
    sch=st.date_input("Enter Day :")
    tm=st.time_input("Enter Time :",datetime.time(8, 45))
    # Every form must have a submit button.
-   submitted = st.form_submit_button("Submit")
+   submitted = st.form_submit_button("Submit",clear_on_submit=True)
    if submitted:
        st.write("Congrts!! you have booked your interview on :" ,sch,"at",tm,"You will receive further details vai mail.")
 

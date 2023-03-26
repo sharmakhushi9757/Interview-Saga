@@ -76,7 +76,7 @@ options = st.multiselect(
 st.write('You selected:', options)
 
 
-df = pd.DataFrame('final/accenturefile.csv')
+df = pd.DataFrame(final/accenturefile.csv)
 
 st.table(df)
 

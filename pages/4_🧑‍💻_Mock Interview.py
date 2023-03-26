@@ -63,7 +63,7 @@ def add_logo(png_file):
 add_logo("Images/logo1.png")
 
 
-st.title("Schedule your mock!!")
+st.title("Book your mock Today!!")
 st.image("https://i.pinimg.com/564x/52/f1/f4/52f1f4548ece73c3c7d7d2cc9aa85d84.jpg")
 
 import streamlit as st

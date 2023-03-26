@@ -1,6 +1,7 @@
 import streamlit as st
 from PIL import Image
 
+
 import base64
 
 
@@ -64,4 +65,13 @@ add_logo("Images/logo1.png")
 
 
 
-st.title("Projects")
+st.title("Prep")
+
+st.subtitle("🧑‍💻 Tech Set :")
+options = st.multiselect(
+    'Select Companies :',
+    ['Accenture', 'Capgemini', 'Cognizant', 'TCS','Wipro','Amazon','Nagarro','Infosys','Goldman Sachs'],['Accenture', 'Cagemini'])
+
+st.write('You selected:', options)
+
+st.subtitle("🧑‍🏫 HR Set :")

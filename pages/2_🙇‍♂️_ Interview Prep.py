@@ -67,7 +67,7 @@ add_logo("Images/logo1.png")
 
 st.title("Prep")
 
-st.subtitle("🧑‍💻 Tech Set :")
+st.subheader("🧑‍💻 Tech Set :")
 options = st.multiselect(
     'What are your favorite colors',
     ['Green', 'Yellow', 'Red', 'Blue'],
@@ -75,4 +75,4 @@ options = st.multiselect(
 
 st.write('You selected:', options)
 
-st.subtitle("🧑‍🏫 HR Set :")
+st.subheader("🧑‍🏫 HR Set :")

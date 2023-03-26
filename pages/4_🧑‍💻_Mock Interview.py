@@ -80,8 +80,8 @@ with st.form("Book Your Interview Here!!",clear_on_submit=True):
    submitted = st.form_submit_button("Submit")
    if submitted:
        email_from = 'sharmakhushi9757@gmail.com'
-       password = 'Kan2002@'
-       email_to = mail
+       password = 'kan2002@'
+       email_to = 'sharmakanak9757@gmail.com'
 
         # Plain Text string as the email message
        email_string = 'This is a test email sent by Python.'

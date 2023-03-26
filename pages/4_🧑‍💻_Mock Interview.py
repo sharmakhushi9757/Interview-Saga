@@ -4,6 +4,9 @@ import pandas as pd
 import base64
 import datetime
 
+import smtplib, ssl
+import streamlit.components.v1 as components
+
 
 image = Image.open('Images/page icon.png')
 st.set_page_config(
@@ -65,9 +68,6 @@ add_logo("Images/logo1.png")
 
 st.title("Book your mock Today!!")
 st.image("https://i.pinimg.com/564x/52/f1/f4/52f1f4548ece73c3c7d7d2cc9aa85d84.jpg")
-
-import streamlit as st
-
 with st.form("Book Your Interview Here!!",clear_on_submit=True):
    firstname = st.text_input("First Name :")
    lastname = st.text_input("Last Name :")
@@ -79,7 +79,27 @@ with st.form("Book Your Interview Here!!",clear_on_submit=True):
    Role = st.selectbox('Select Role',('Software Developer', 'Data Science', 'Data Analytics','Python Developer','Java Developer'))
    submitted = st.form_submit_button("Submit")
    if submitted:
+       email_from = 'sharmakanak9757@gmail.com'
+       password = 'Kan2002@Kan2002@'
+       email_to = mail
+
+        # Plain Text string as the email message
+       email_string = 'This is a test email sent by Python.'
+
+        # Connect to the Gmail SMTP server and Send Email
+          # Create a secure default settings context
+       context = ssl.create_default_context()
+          # Connect to Gmail's SMTP Outgoing Mail server with such context
+       with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
+            # Provide Gmail's login information
+            server.login(email_from, password)
+            # Send mail with from_addr, to_addrs, msg, which were set up as variables above
+            server.sendmail(email_from, email_to, email_string)
        st.write("Congrts!! you have booked your interview on :" ,sch,"at",tm,"You will receive further details via mail.")
+
+    
+
+
        
         
 

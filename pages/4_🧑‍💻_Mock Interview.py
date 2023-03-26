@@ -1,6 +1,8 @@
 import streamlit as st
 from PIL import Image
+import pandas as pd
 import base64
+import datetime
 
 
 image = Image.open('Images/page icon.png')
@@ -62,4 +64,18 @@ add_logo("Images/logo1.png")
 
 
 st.title("Schedule your mock interview here!!")
+
+import streamlit as st
+
+with st.form("Book Your Interview Here!!"):
+   firstname = st.text_input("First Name :")
+   lastname = st.text_input("Last Name :")
+   sch=st.date_input("Enter Day :")
+   tm=st.time_input("Enter Time :",datetime.time(8, 45))
+   # Every form must have a submit button.
+   submitted = st.form_submit_button("Submit")
+   if submitted:
+       st.write("slider", slider_val, "checkbox", checkbox_val)
+
+st.write("Outside the form")
 

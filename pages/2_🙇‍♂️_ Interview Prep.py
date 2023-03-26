@@ -76,8 +76,8 @@ options = st.multiselect(
 st.write('You selected:', options)
 
 
-df = pd.DataFrame(final/accenturefile.csv)
+df = pd.read_csv('final/accenturefile.csv')
 
-st.table(df)
+st.write(df)
 
 st.subheader("🧑‍🏫 HR Set :")

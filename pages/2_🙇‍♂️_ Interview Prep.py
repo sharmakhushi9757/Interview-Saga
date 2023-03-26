@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image
-
-
+import pandas as pd
+import numpy as np
 import base64
 
 
@@ -69,10 +69,15 @@ st.title("Prep")
 
 st.subheader("🧑‍💻 Tech Set :")
 options = st.multiselect(
-    'What are your favorite colors',
+    'Select Companies :',
     ['Accenture', 'Wipro', 'TCS', 'Capgemini','Cognizant','Nagarro','Sumsung','Amazon','Goldman Sachs','Infosys'],
     ['Accenture', 'Capgemini'])
 
 st.write('You selected:', options)
+
+
+df = pd.DataFrame('final/accenturefile.csv')
+
+st.table(df)
 
 st.subheader("🧑‍🏫 HR Set :")

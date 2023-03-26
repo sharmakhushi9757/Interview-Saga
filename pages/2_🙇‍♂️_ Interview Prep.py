@@ -70,8 +70,8 @@ st.title("Prep")
 st.subheader("🧑‍💻 Tech Set :")
 options = st.multiselect(
     'What are your favorite colors',
-    ['Green', 'Yellow', 'Red', 'Blue'],
-    ['Yellow', 'Red'])
+    ['Accenture', 'Wipro', 'TCS', 'Capgemini','Cognizant','Nagarro','Sumsung','Amazon','Goldman Sachs','Infosys'],
+    ['Accenture', 'Capgemini'])
 
 st.write('You selected:', options)
 

@@ -74,10 +74,8 @@ options = st.multiselect(
     ['Accenture', 'Capgemini'])
 
 st.write('You selected:', options)
-
-
 df = pd.read_csv('final/accenturefile.csv')
-
-st.write(df)
+if 'Accenture' in options:
+    st.write(df)
 
 st.subheader("🧑‍🏫 HR Set  :")

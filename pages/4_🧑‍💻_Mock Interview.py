@@ -75,7 +75,7 @@ with st.form("Book Your Interview Here!!"):
    # Every form must have a submit button.
    submitted = st.form_submit_button("Submit")
    if submitted:
-       st.write("Congrts!! you have booked your interview on :" sch,"at",tm)
+       st.write("Congrts!! you have booked your interview on :" ,sch,"at",tm)
 
 st.write("Outside the form")
 

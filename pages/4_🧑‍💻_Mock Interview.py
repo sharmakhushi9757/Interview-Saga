@@ -73,11 +73,9 @@ with st.form("Book Your Interview Here!!",clear_on_submit=True):
    mail=st.text_input("Enter Email :")
    sch=st.date_input("Enter Day :")
    tm=st.time_input("Enter Time :",datetime.time(8, 45))
-   Education = st.text_input("Enter Highest Qualification :")
+   Education = st.selectbox('Enter Highest Qualification ',('P.H.D','Post Graduation','Bachlors','Senior Secoundary','Higher Secoundary' ))
    Experience = st.number_input("Enter Experience (in numbers) :")
    Role = st.selectbox('Select Role',('Software Developer', 'Data Science', 'Data Analytics','Python Developer','Java Developer'))
-   book=st.form_submit_button("Book")
-   # Every form must have a submit button.
    submitted = st.form_submit_button("Submit")
    if submitted:
        st.write("Congrts!! you have booked your interview on :" ,sch,"at",tm,"You will receive further details via mail.")

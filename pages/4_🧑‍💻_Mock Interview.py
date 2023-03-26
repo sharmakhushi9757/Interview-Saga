@@ -67,14 +67,14 @@ st.title("Schedule your mock interview here!!")
 
 import streamlit as st
 
-with st.form("Book Your Interview Here!!"):
+with st.form("Book Your Interview Here!!",clear_on_submit=True):
    firstname = st.text_input("First Name :")
    lastname = st.text_input("Last Name :")
    mail=st.text_input("Enter Email :")
    sch=st.date_input("Enter Day :")
    tm=st.time_input("Enter Time :",datetime.time(8, 45))
    # Every form must have a submit button.
-   submitted = st.form_submit_button("Submit",clear_on_submit=True)
+   submitted = st.form_submit_button("Submit")
    if submitted:
        st.write("Congrts!! you have booked your interview on :" ,sch,"at",tm,"You will receive further details vai mail.")
 

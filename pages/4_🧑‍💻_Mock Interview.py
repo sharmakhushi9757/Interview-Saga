@@ -74,7 +74,7 @@ with st.form("Book Your Interview Here!!",clear_on_submit=True):
    sch=st.date_input("Enter Day :")
    tm=st.time_input("Enter Time :",datetime.time(8, 45))
    Education = st.selectbox('Enter Highest Qualification ',('bachelor','P.H.D','Post Graduation','Senior Secoundary','Higher Secoundary' ))
-   Experience = st.number_input("Enter Experience (in numbers) :",min_value=1,step=1)
+   Experience = st.number_input("Enter Experience (in numbers) :",min_value=0,step=1)
    Role = st.selectbox('Select Role',('Software Developer', 'Data Science', 'Data Analytics','Python Developer','Java Developer'))
    submitted = st.form_submit_button("Submit")
    if submitted:

@@ -79,7 +79,7 @@ with st.form("Book Your Interview Here!!",clear_on_submit=True):
        st.write("Congrts!! you have booked your interview on :" ,sch,"at",tm,"You will receive further details via mail.")
        st.write("**Fill this form for conformtion :**")
        with st.form("details",clear_on_submit=True):
-            Highest Education = st.text_input("Enter Highest Qualification :")
+            Education = st.text_input("Enter Highest Qualification :")
             Experience = st.number_input("Enter Experience (in numbers) :")
             Role = st.selectbox('Select Role',('Software Developer', 'Data Science', 'Data Analytics','Python Developer','Java Developer'))
             book=st.form_submit_button("Book")

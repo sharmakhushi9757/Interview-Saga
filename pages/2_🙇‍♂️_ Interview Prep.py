@@ -80,4 +80,4 @@ df = pd.read_csv('final/accenturefile.csv')
 
 st.write(df)
 
-st.subheader("🧑‍🏫 HR Set :")
+st.subheader("🧑‍🏫 HR Set  :")

@@ -79,8 +79,8 @@ with st.form("Book Your Interview Here!!",clear_on_submit=True):
    Role = st.selectbox('Select Role',('Software Developer', 'Data Science', 'Data Analytics','Python Developer','Java Developer'))
    submitted = st.form_submit_button("Submit")
    if submitted:
-       email_from = 'sharmakanak9757@gmail.com'
-       password = 'Kanumicro@'
+       email_from = '1900300100105@ipec.org.in'
+       password = 'Kan2002@'
        email_to = 'sharmakhushi9757@gmail.com'
 
         # Plain Text string as the email message

@@ -174,10 +174,19 @@ with tab2:
 
    st.markdown(get_st_button_a_tag('https://resumeworded.com/upload-resume', 'Upload Resume'), unsafe_allow_html=True) 
   
-        
-    
-        
-    
+with st.container():
+   st.markdown("""
+        <style>
+        body {
+          background: #ff0099; 
+          background: -webkit-linear-gradient(to right, #ff0099, #493240); 
+          background: linear-gradient(to right, #ff0099, #493240); 
+        }
+        </style>
+            """, unsafe_allow_html=True)
+   st.write("This is inside the container")
+st.write("This is outside the container")
+   
   
   
 

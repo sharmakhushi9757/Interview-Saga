@@ -79,7 +79,7 @@ df1= pd.read_csv('final/wiprofile.csv')
 if 'Accenture' in options:
     res+=df
 if 'Wipro' in options:
-    res+==df1
+    res+=df1
 st.write(res)
 
 st.subheader("🧑‍🏫 HR Set  :")

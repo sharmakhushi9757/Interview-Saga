@@ -79,7 +79,7 @@ df2=pd.read_csv('final/wiprofile.csv')
 df=pd.DataFrame()
 if 'Accenture' in options:
     df=pd.concat([df,df1])
-if 'wipro' in options:
+if 'Wipro' in options:
     df=pd.concat([df,df2])
 st.write(df)
 

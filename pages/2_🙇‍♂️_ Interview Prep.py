@@ -81,9 +81,9 @@ if 'Accenture' in options:
     df=pd.concat([df,df1])
     df = df.reset_index(drop=True)
 if 'Wipro' in options:
-    df=pd.concat([df,df2],index=False)
+    df=pd.concat([df,df2])
     df = df.reset_index(drop=True)
-df=df.reset_index()
+df=df.reset_index(drop=True)
 st.write(df,index=False)
 
 st.subheader("🧑‍🏫 HR Set  :")

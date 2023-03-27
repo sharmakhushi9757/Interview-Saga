@@ -74,8 +74,8 @@ options = st.multiselect(
     'Select Companies :',
     ['Accenture', 'Wipro', 'TCS', 'Capgemini','Cognizant','Nagarro','Sumsung','Amazon','Goldman Sachs','Infosys'],
     ['Accenture', 'Capgemini'])
-df1=pd.read_csv('final/accenturefile.csv')
-df2=pd.read_csv('final/wiprofile.csv')
+df1=pd.read_csv('final/accenturefile.csv',index=False)
+df2=pd.read_csv('final/wiprofile.csv',index=False)
 df=pd.DataFrame()
 if 'Accenture' in options:
     df=pd.concat([df,df1])

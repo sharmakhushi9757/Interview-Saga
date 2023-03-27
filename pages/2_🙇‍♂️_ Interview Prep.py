@@ -81,6 +81,6 @@ if 'Accenture' in options:
     df=pd.concat([df,df1])
 if 'Wipro' in options:
     df=pd.concat([df,df2])
-st.write(df)
+st.write(df,index=False)
 
 st.subheader("🧑‍🏫 HR Set  :")

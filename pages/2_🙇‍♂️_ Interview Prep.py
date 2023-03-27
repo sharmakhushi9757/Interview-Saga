@@ -68,14 +68,18 @@ add_logo("Images/logo1.png")
 st.title("Prep")
 
 st.subheader("🧑‍💻 Tech Set :")
+res = pd.DataFrame()
+
 options = st.multiselect(
     'Select Companies :',
     ['Accenture', 'Wipro', 'TCS', 'Capgemini','Cognizant','Nagarro','Sumsung','Amazon','Goldman Sachs','Infosys'],
     ['Accenture', 'Capgemini'])
-
-st.write('You selected:', options)
 df = pd.read_csv('final/accenturefile.csv')
+df1= pd.read_csv('final/wiprofile.csv')
 if 'Accenture' in options:
-    st.write(df)
+    res+=df
+if 'Wipro' in options:
+    res+==df1
+st.write(res)
 
 st.subheader("🧑‍🏫 HR Set  :")

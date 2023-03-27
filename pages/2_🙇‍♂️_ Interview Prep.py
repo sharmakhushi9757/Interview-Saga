@@ -74,13 +74,13 @@ options = st.multiselect(
     'Select Companies :',
     ['Accenture', 'Wipro', 'TCS', 'Capgemini','Cognizant','Nagarro','Sumsung','Amazon','Goldman Sachs','Infosys'],
     ['Accenture', 'Capgemini'])
-df1=pd.read_csv('final/accenturefile.csv',index=False)
-df2=pd.read_csv('final/wiprofile.csv',index=False)
+df1=pd.read_csv('final/accenturefile.csv',encoding='utf-8', index=False)
+df2=pd.read_csv('final/wiprofile.csv',encoding='utf-8', index=False)
 df=pd.DataFrame()
 if 'Accenture' in options:
     df=pd.concat([df,df1])
 if 'Wipro' in options:
     df=pd.concat([df,df2])
-st.write(df,index=False)
+st.write(df,encoding='utf-8', index=False)
 
 st.subheader("🧑‍🏫 HR Set  :")

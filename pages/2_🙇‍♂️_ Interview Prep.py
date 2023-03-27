@@ -78,9 +78,9 @@ df1=pd.read_csv('final/accenturefile.csv')
 df2=pd.read_csv('final/wiprofile.csv')
 df=pd.DataFrame()
 if 'Accenture' in options:
-    df=pd.concat([df,df1])
+    df=pd.concat([df,df1],index=False)
 if 'Wipro' in options:
-    df=pd.concat([df,df2])
+    df=pd.concat([df,df2],index=False)
 df=df.reset_index()
 st.write(df,index=False)
 

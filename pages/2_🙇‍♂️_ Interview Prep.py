@@ -74,12 +74,13 @@ options = st.multiselect(
     'Select Companies :',
     ['Accenture', 'Wipro', 'TCS', 'Capgemini','Cognizant','Nagarro','Sumsung','Amazon','Goldman Sachs','Infosys'],
     ['Accenture', 'Capgemini'])
-d={}
-d['Accenture']='final/accenturefile.csv'
-d['Wipro']='final/wiprofile.csv'
-for company in options:
-    table.append(pd.read_csv(d[company]))
-df = pd.concat(table, sort=False)
-
-
+df1=pd.read_csv('final/accenturefile.csv')
+df2=pd.read_csv('final/wiprofile.csv')
+df=pd.DataFrame()
+for comapny in options:
+    if company=='Accenture':
+        df=pd.concat(df,df1)
+    if company=='Wipro':
+        df=pd.concat(df,df2)
+st.write(df)
 st.subheader("🧑‍🏫 HR Set  :")

@@ -105,11 +105,15 @@ with st.container():
     'Select Company:',
     ['accenture_process', 'wipro_process', 'tcs_process', 'capgemini_process','cognizant_process','nagarro_process','sumsung_process','amazon_process','goldmanSachs_process','infosys_process'])
     if 'sumsung_process' in option:
-        st.markdown("***Samsung conducts 3-4 rounds to select freshers as a Software Engineer in their organisation.***")
-        st.markdown("1.Coding Round \n 2. Technical Interview 1 \n 3. Technical Interview 2\n 4. HR Round")
-        st.markdown("\n")
-        st.markdown("***Academic Criteria:***")
-        st.markdown("1. 70 percent or above in B.Tech, Class X, Class XII \n 2. No backlogs at the time of interview")
+        c1,c2=st.columns(2)
+        with c1:
+            st.markdown("***Samsung conducts 3-4 rounds to select freshers as a Software Engineer in their organisation.***")
+            st.markdown("1.Coding Round \n 2. Technical Interview 1 \n 3. Technical Interview 2\n 4. HR Round")
+            st.markdown("\n")
+            st.markdown("***Academic Criteria:***")
+            st.markdown("1. 70 percent or above in B.Tech, Class X, Class XII \n 2. No backlogs at the time of interview")
+        with c2:
+            st.image("https://media.geeksforgeeks.org/wp-content/uploads/Samsung-LOGO-300x98.jpeg")
 st.markdown("---")
 
 

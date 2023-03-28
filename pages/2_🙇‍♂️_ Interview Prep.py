@@ -101,8 +101,8 @@ with st.container():
 
 with st.container():
     st.subheader("Recruitment Process & Interview Tips")
-    options = st.multiselect(
-    'Select Companies :',
+    option = st.multiselect(
+    'Select Company:',
     ['accenture_process', 'wipro_process', 'tcs_process', 'capgemini_process','cognizant_process','nagarro_process','sumsung_process','amazon_process','goldmanSachs_process','infosys_process'])
     if 'sumsung_process' in option:
         st.markdown("***Samsung conducts 3-4 rounds to select freshers as a Software Engineer in their organisation.***")

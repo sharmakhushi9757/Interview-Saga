@@ -70,6 +70,11 @@ st.title("Prep")
 
 st.subheader("🧑‍💻 Tech Set :")
 with st.container():
+    progress_text = "Operation in progress. Please wait."
+    my_bar = st.progress(0, text=progress_text)
+    for percent_complete in range(100):
+        time.sleep(0.1)
+    my_bar.progress(percent_complete + 1, text=progress_text)
     options = st.multiselect(
     'Select Companies :',
     ['Accenture', 'Wipro', 'TCS', 'Capgemini','Cognizant','Nagarro','Sumsung','Amazon','Goldman Sachs','Infosys'],

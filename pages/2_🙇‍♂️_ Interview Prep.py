@@ -74,20 +74,8 @@ options = st.multiselect(
     'Select Companies :',
     ['Accenture', 'Wipro', 'TCS', 'Capgemini','Cognizant','Nagarro','Sumsung','Amazon','Goldman Sachs','Infosys'],
     ['Accenture', 'Capgemini'])
-df1=pd.read_csv('final/accenturefile.csv')
-df2=pd.read_csv('final/wiprofile.csv')
-df3=pd.read_csv('final/amazonfile.csv')
-df4=pd.read_csv('final/sumsungfile.csv')
+df4=pd.read_csv('final_file/sumsung_add_file_tech.csv')
 df=pd.DataFrame()
-if 'Amazon' in options:
-    df=pd.concat([df,df3])
-    df = df.reset_index(drop=True)
-if 'Accenture' in options:
-    df=pd.concat([df,df1])
-    df = df.reset_index(drop=True)
-if 'Wipro' in options:
-    df=pd.concat([df,df2])
-    df = df.reset_index(drop=True)
 if 'Sumsung' in options:
     df=pd.concat([df,df4])
     df = df.reset_index(drop=True)

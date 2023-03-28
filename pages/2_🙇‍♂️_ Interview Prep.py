@@ -112,6 +112,8 @@ with st.container():
             st.markdown("\n")
             st.markdown("***Academic Criteria:***")
             st.markdown("1. 70 percent or above in B.Tech, Class X, Class XII \n 2. No backlogs at the time of interview")
+        with c2:
+            st.image("http://lofrev.net/wp-content/photos/2016/06/samsung-logo-45.jpg")
         
 st.markdown("---")
 

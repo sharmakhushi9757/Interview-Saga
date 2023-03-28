@@ -71,7 +71,6 @@ with st.spinner('Please Wait'):
         time.sleep(3)
 st.subheader("🧑‍💻 Tech Set :")
 with st.container():
-    my_bar.progress(percent_complete + 1, text=progress_text)
     options = st.multiselect(
     'Select Companies :',
     ['Accenture', 'Wipro', 'TCS', 'Capgemini','Cognizant','Nagarro','Sumsung','Amazon','Goldman Sachs','Infosys'],
@@ -102,8 +101,6 @@ with st.container():
     if df is not st.empty():
         st.write(df,index=False)
 st.subheader("⭕ Recruitment Process & Interview Tips")
-with st.container():
-    st.success('Done!')
     option = st.multiselect(
     'Select Company:',
     ['accenture_process', 'wipro_process', 'tcs_process', 'capgemini_process','cognizant_process','nagarro_process','sumsung_process','amazon_process','goldmanSachs_process','infosys_process'])

@@ -67,7 +67,6 @@ add_logo("Images/logo1.png")
 
 
 st.title("Prep")
-st.snow()
 st.subheader("🧑‍💻 Technical Question Set :")
 with st.container():
     options = st.multiselect(

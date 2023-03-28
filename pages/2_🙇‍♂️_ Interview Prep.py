@@ -68,7 +68,7 @@ add_logo("Images/logo1.png")
 
 st.title("Prep")
 st.snow()
-st.subheader("🧑‍💻 Tech Set :")
+st.subheader("🧑‍💻 Technical Question Set :")
 with st.container():
     options = st.multiselect(
     'Select Companies :',
@@ -84,7 +84,7 @@ with st.container():
 
 
 
-st.subheader("🧑‍🏫 HR Set  :")
+st.subheader("🧑‍🏫 HR Question Set  :")
 
 with st.container():
     options = st.multiselect(

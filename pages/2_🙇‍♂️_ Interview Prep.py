@@ -99,10 +99,8 @@ with st.container():
     df=df.reset_index(drop=True)
     if df is not st.empty():
         st.write(df,index=False
-
-
+st.subheader("⭕ Recruitment Process & Interview Tips")
 with st.container():
-    st.subheader("⭕ Recruitment Process & Interview Tips")
     with st.spinner('Please Wait'):
         time.sleep(2)
     st.success('Done!')

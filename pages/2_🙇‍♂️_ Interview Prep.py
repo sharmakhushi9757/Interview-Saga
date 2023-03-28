@@ -106,7 +106,12 @@ with st.container():
     ['accenture_process', 'wipro_process', 'tCS_process', 'capgemini_process','cognizant_process','nagarro_process','sumsung_process','amazon_process','goldmanSachs_process','infosys_process'],
     ['accenture_process', 'capgemini_process'])
     if 'sumsung_process' in options:
-        st.markdown("Samsung conducts 3-4 rounds to select freshers as a Software Engineer in their organisation.")
-        st.markdown("1.Coding Round\n 2. Technical Interview 1\n 3. Technical Interview 2\n 4. HR Round")
+        st.markdown("***Samsung conducts 3-4 rounds to select freshers as a Software Engineer in their organisation.***")
+        st.markdown("1.Coding Round\n  2. Technical Interview 1 \n 3. Technical Interview 2\n 4. HR Round")
+        st.markdown("\n")
+        st.markdown("***Academic Criteria:***")
+        st.markdown("1. 70 percent or above in B.Tech, Class X, Class XII \n 2. No backlogs at the time of interview")
+
+
 
     

@@ -97,3 +97,6 @@ with st.container():
         df = df.reset_index(drop=True)
     df=df.reset_index(drop=True)
     st.write(df,index=False)
+
+with st.container():
+    st.markdown("Samsung Recruitment Process :")

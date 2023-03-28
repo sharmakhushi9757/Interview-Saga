@@ -88,15 +88,16 @@ st.subheader("🧑‍🏫 HR Set  :")
 with st.container():
     options = st.multiselect(
     'Select Companies :',
-    ['Accenture', 'Wipro', 'TCS', 'Capgemini','Cognizant','Nagarro','Sumsung','Amazon','Goldman Sachs','Infosys'],
-    ['Accenture', 'Capgemini'])
+    ['accenture', 'wipro', 'tCS', 'capgemini','cognizant','nagarro','sumsung','amazon','goldman sachs','infosys'],
+    ['accenture', 'capgemini'])
     df4=pd.read_csv('final_file/sumsung_add_file_hr.csv')
     df=pd.DataFrame()
-    if 'Sumsung' in options:
+    if 'sumsung' in options:
         df=pd.concat([df,df4])
         df = df.reset_index(drop=True)
     df=df.reset_index(drop=True)
-    st.write(df,index=False)
+    if df is not st.empty():
+        st.write(df,index=False)
 
 with st.container():
     st.markdown("Samsung Recruitment Process :")

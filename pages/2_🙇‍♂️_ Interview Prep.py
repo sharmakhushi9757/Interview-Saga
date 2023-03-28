@@ -75,12 +75,17 @@ with st.container():
     ['Accenture', 'Wipro', 'TCS', 'Capgemini','Cognizant','Nagarro','Sumsung','Amazon','Goldman Sachs','Infosys'],
     ['Accenture', 'Capgemini'])
     df4=pd.read_csv('final_file/sumsung_add_file_tech.csv')
+    df3=pd.read_csv('final_file/accenture_add_file.csv')
     df=pd.DataFrame()
     if 'Sumsung' in options:
         df=pd.concat([df,df4])
         df = df.reset_index(drop=True)
+    if 'Accenture' in options:
+        df=pd.concat([df,df3])
+        df = df.reset_index(drop=True)
     df=df.reset_index(drop=True)
     st.write(df,index=False)
+    
 
 
 

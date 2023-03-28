@@ -101,6 +101,7 @@ with st.container():
     if df is not st.empty():
         st.write(df,index=False)
 st.subheader("⭕ Recruitment Process & Interview Tips")
+with st.container():
     option = st.multiselect(
     'Select Company:',
     ['accenture_process', 'wipro_process', 'tcs_process', 'capgemini_process','cognizant_process','nagarro_process','sumsung_process','amazon_process','goldmanSachs_process','infosys_process'])

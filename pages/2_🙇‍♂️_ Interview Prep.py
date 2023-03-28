@@ -85,11 +85,11 @@ st.subheader("🧑‍🏫 HR Set  :")
 
 options_set = st.multiselect(
     'Select Companies :',
-    ['Accenture', 'Wipro', 'TCS', 'Capgemini','Cognizant','Nagarro','Sumsung','Amazon','Goldman Sachs','Infosys'],
-    ['Accenture', 'Capgemini'])
+    ['Accenture ', 'Wipro ', 'TCS ', 'Capgemini ','Cognizant ','Nagarro ','Sumsung ','Amazon ','Goldman Sachs ','Infosys '],
+    ['Accenture ', 'Capgemini '])
 df_4=pd.read_csv('final_file/sumsung_add_file_hr.csv')
 df_0=pd.DataFrame()
-if 'Sumsung' in options_set:
+if 'Sumsung ' in options_set:
     df_0=pd.concat([df_0,df_4])
     df_0 = df_0.reset_index(drop=True)
 df_0=df_0.reset_index(drop=True)

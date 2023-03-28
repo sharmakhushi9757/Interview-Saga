@@ -67,8 +67,7 @@ add_logo("Images/logo1.png")
 
 
 st.title("Prep")
-with st.spinner('Please Wait'):
-        time.sleep(3)
+st.snow()
 st.subheader("🧑‍💻 Tech Set :")
 with st.container():
     options = st.multiselect(

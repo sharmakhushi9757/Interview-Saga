@@ -2,6 +2,7 @@ import streamlit as st
 from PIL import Image
 import pandas as pd
 import numpy as np
+import time
 import base64
 
 
@@ -97,14 +98,18 @@ with st.container():
         df = df.reset_index(drop=True)
     df=df.reset_index(drop=True)
     if df is not st.empty():
-        st.write(df,index=False)
+        st.write(df,index=False
+
 
 with st.container():
     st.subheader("⭕ Recruitment Process & Interview Tips")
+    with st.spinner('Please Wait'):
+        time.sleep(2)
+    st.success('Done!')
     option = st.multiselect(
     'Select Company:',
     ['accenture_process', 'wipro_process', 'tcs_process', 'capgemini_process','cognizant_process','nagarro_process','sumsung_process','amazon_process','goldmanSachs_process','infosys_process'])
-    if 'sumsung_process' is option:
+    if 'sumsung_process' in option:
         st.markdown("***Samsung conducts 3-4 rounds to select freshers as a Software Engineer in their organisation.***")
         st.markdown("1.Coding Round \n 2. Technical Interview 1 \n 3. Technical Interview 2\n 4. HR Round")
         st.markdown("\n")

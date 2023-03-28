@@ -68,29 +68,32 @@ add_logo("Images/logo1.png")
 st.title("Prep")
 
 st.subheader("🧑‍💻 Tech Set :")
-
-options = st.multiselect(
+with st.container():
+    options = st.multiselect(
     'Select Companies :',
     ['Accenture', 'Wipro', 'TCS', 'Capgemini','Cognizant','Nagarro','Sumsung','Amazon','Goldman Sachs','Infosys'],
     ['Accenture', 'Capgemini'])
-df4=pd.read_csv('final_file/sumsung_add_file_tech.csv')
-df=pd.DataFrame()
-if 'Sumsung' in options:
-    df=pd.concat([df,df4])
-    df = df.reset_index(drop=True)
-df=df.reset_index(drop=True)
-st.write(df,index=False)
+    df4=pd.read_csv('final_file/sumsung_add_file_tech.csv')
+    df=pd.DataFrame()
+    if 'Sumsung' in options:
+        df=pd.concat([df,df4])
+        df = df.reset_index(drop=True)
+    df=df.reset_index(drop=True)
+    st.write(df,index=False)
+
+
 
 st.subheader("🧑‍🏫 HR Set  :")
 
-options_set = st.multiselect(
+with st.container():
+    options = st.multiselect(
     'Select Companies :',
-    ['Accenture ', 'Wipro ', 'TCS ', 'Capgemini ','Cognizant ','Nagarro ','Sumsung ','Amazon ','Goldman Sachs ','Infosys '],
-    ['Accenture ', 'Capgemini '])
-df_4=pd.read_csv('final_file/sumsung_add_file_hr.csv')
-df_0=pd.DataFrame()
-if 'Sumsung ' in options_set:
-    df_0=pd.concat([df_0,df_4])
-    df_0 = df_0.reset_index(drop=True)
-df_0=df_0.reset_index(drop=True)
-st.write(df_0,index=False)
+    ['Accenture', 'Wipro', 'TCS', 'Capgemini','Cognizant','Nagarro','Sumsung','Amazon','Goldman Sachs','Infosys'],
+    ['Accenture', 'Capgemini'])
+    df4=pd.read_csv('final_file/sumsung_add_file_hr.csv')
+    df=pd.DataFrame()
+    if 'Sumsung' in options:
+        df=pd.concat([df,df4])
+        df = df.reset_index(drop=True)
+    df=df.reset_index(drop=True)
+    st.write(df,index=False)

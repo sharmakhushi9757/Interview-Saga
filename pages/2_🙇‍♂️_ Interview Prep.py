@@ -98,7 +98,7 @@ with st.container():
         df = df.reset_index(drop=True)
     df=df.reset_index(drop=True)
     if df is not st.empty():
-        st.write(df,index=False
+        st.write(df,index=False)
 st.subheader("⭕ Recruitment Process & Interview Tips")
 with st.container():
     with st.spinner('Please Wait'):

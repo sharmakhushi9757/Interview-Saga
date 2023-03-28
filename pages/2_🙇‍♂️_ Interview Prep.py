@@ -67,13 +67,10 @@ add_logo("Images/logo1.png")
 
 
 st.title("Prep")
-
+with st.spinner('Please Wait'):
+        time.sleep(3)
 st.subheader("🧑‍💻 Tech Set :")
 with st.container():
-    progress_text = "Operation in progress. Please wait."
-    my_bar = st.progress(0, text=progress_text)
-    for percent_complete in range(100):
-        time.sleep(0.1)
     my_bar.progress(percent_complete + 1, text=progress_text)
     options = st.multiselect(
     'Select Companies :',
@@ -106,8 +103,6 @@ with st.container():
         st.write(df,index=False)
 st.subheader("⭕ Recruitment Process & Interview Tips")
 with st.container():
-    with st.spinner('Please Wait'):
-        time.sleep(2)
     st.success('Done!')
     option = st.multiselect(
     'Select Company:',

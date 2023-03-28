@@ -76,7 +76,11 @@ with st.container():
     ['Accenture', 'Capgemini'])
     df4=pd.read_csv('final_file/sumsung_add_file_tech.csv')
     df3=pd.read_csv('final_file/accenture_add_file.csv')
+    df2=pd.read_csv('final_file/wipro_add_file.csv')
     df=pd.DataFrame()
+    if 'Wipro' in options:
+        df=pd.concat([df,df2])
+        df = df.reset_index(drop=True)
     if 'Sumsung' in options:
         df=pd.concat([df,df4])
         df = df.reset_index(drop=True)

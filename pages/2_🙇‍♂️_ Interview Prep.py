@@ -104,7 +104,11 @@ with st.container():
     ['accenture', 'wipro', 'tcs', 'capgemini','cognizant','nagarro','sumsung','amazon','infosys'],
     ['accenture', 'capgemini'])
     df4=pd.read_csv('final_file/sumsung_add_file_hr.csv')
+    df3=pd.read_csv('final_file/amazon_add_file_hr.csv')
     df=pd.DataFrame()
+    if 'amazon' in options:
+        df=pd.concat([df,df3])
+        df = df.reset_index(drop=True)
     if 'sumsung' in options:
         df=pd.concat([df,df4])
         df = df.reset_index(drop=True)

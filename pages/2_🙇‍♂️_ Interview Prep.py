@@ -156,6 +156,66 @@ with st.container():
         with c2:
             st.image("https://images.livemint.com/img/2020/08/06/600x338/Capgemini_Logo_New_1596710277634_1596710306780.jpg")
         st.markdown("---")
+    if 'amazon_process' in option:
+        c1,c2=st.columns(2)
+        with c1:
+            st.markdown("***Wipro conducts 3 rounds to recruit new employees.***")
+            st.markdown("\n 1. Aptitude and Essay Round \n 2. Technical Aptitude Round \n 3. Technical Interview \n 4. HR Interview 2\n")
+            st.markdown("\n")
+            st.markdown("***Academic Criteria:***")
+            st.markdown("1. 65 percent or above in B.Tech, Class X, Class XII \n 2. No backlogs at the time of interview.")
+        with c2:
+            st.image("https://images.livemint.com/img/2020/08/06/600x338/Capgemini_Logo_New_1596710277634_1596710306780.jpg")
+        st.markdown("---")
+    if 'tcs_process' in option:
+        c1,c2=st.columns(2)
+        with c1:
+            st.markdown("***Wipro conducts 3 rounds to recruit new employees.***")
+            st.markdown("\n 1. Aptitude and Essay Round \n 2. Technical Aptitude Round \n 3. Technical Interview \n 4. HR Interview 2\n")
+            st.markdown("\n")
+            st.markdown("***Academic Criteria:***")
+            st.markdown("1. 65 percent or above in B.Tech, Class X, Class XII \n 2. No backlogs at the time of interview.")
+        with c2:
+            st.image("https://images.livemint.com/img/2020/08/06/600x338/Capgemini_Logo_New_1596710277634_1596710306780.jpg")
+        st.markdown("---")
+    if 'cognizant_process' in option:
+        c1,c2=st.columns(2)
+        with c1:
+            st.markdown("***Wipro conducts 3 rounds to recruit new employees.***")
+            st.markdown("\n 1. Aptitude and Essay Round \n 2. Technical Aptitude Round \n 3. Technical Interview \n 4. HR Interview 2\n")
+            st.markdown("\n")
+            st.markdown("***Academic Criteria:***")
+            st.markdown("1. 65 percent or above in B.Tech, Class X, Class XII \n 2. No backlogs at the time of interview.")
+        with c2:
+            st.image("https://images.livemint.com/img/2020/08/06/600x338/Capgemini_Logo_New_1596710277634_1596710306780.jpg")
+        st.markdown("---")
+    if 'nagarro_process' in option:
+        c1,c2=st.columns(2)
+        with c1:
+            st.markdown("***Nagarro conducts 4 rounds to select freshers as Assistant System Engineer in their organisation.***")
+            st.markdown("\n 1. Written Round 1 \n 2. Written Round 2 \n 3. Technical Interview 1 \n 4. Technical Interview 1\n 5. HR Interview \n")
+            st.markdown("\n")
+            st.markdown("***Academic Criteria:***")
+            st.markdown("1. 60 percent or above in B.Tech, Class X, Class XII \n 2. No backlogs at the time of interview.")
+        with c2:
+            st.image("https://logos-world.net/wp-content/uploads/2022/01/Nagarro-Logo.png")
+        st.markdown("---")
+    if 'infosys_process' in option:
+        c1,c2=st.columns(2)
+        with c1:
+            st.markdown("***Infosys conducts 3 rounds to recruit new employees.***")
+            st.markdown("\n 1. Online Test \n 2. Technical Interview \n 4. HR Interview 2\n")
+            st.markdown("\n")
+            st.markdown("***Academic Criteria:***")
+            st.markdown("1. 65 percent or above in B.Tech, Class X, Class XII \n 2. No backlogs at the time of interview.")
+        with c2:
+            st.image("https://media.geeksforgeeks.org/wp-content/uploads/infosysrecruit.png")
+        st.markdown("---")
+
+
+
+
+
 
 
 

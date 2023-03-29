@@ -71,7 +71,7 @@ st.subheader("🧑‍💻 Technical Question Set :")
 with st.container():
     options = st.multiselect(
     'Select Companies :',
-    ['Accenture', 'Wipro', 'TCS', 'Capgemini','Cognizant','Nagarro','Sumsung','Amazon','Goldman Sachs','Infosys'],
+    ['Accenture', 'Wipro', 'TCS', 'Capgemini','Cognizant','Nagarro','Sumsung','Amazon','Infosys'],
     ['Accenture', 'Capgemini'])
     df4=pd.read_csv('final_file/sumsung_add_file_tech.csv')
     df3=pd.read_csv('final_file/accenture_add_file.csv')
@@ -97,7 +97,7 @@ st.subheader("🧑‍🏫 HR Question Set  :")
 with st.container():
     options = st.multiselect(
     'Select Companies :',
-    ['accenture', 'wipro', 'tcs', 'capgemini','cognizant','nagarro','sumsung','amazon','goldman sachs','infosys'],
+    ['accenture', 'wipro', 'tcs', 'capgemini','cognizant','nagarro','sumsung','amazon','infosys'],
     ['accenture', 'capgemini'])
     df4=pd.read_csv('final_file/sumsung_add_file_hr.csv')
     df=pd.DataFrame()
@@ -111,7 +111,7 @@ st.subheader("⭕ Recruitment Process & Interview Tips")
 with st.container():
     option = st.multiselect(
     'Select Company:',
-    ['accenture_process', 'wipro_process', 'tcs_process', 'capgemini_process','cognizant_process','nagarro_process','sumsung_process','amazon_process','goldmanSachs_process','infosys_process'])
+    ['accenture_process', 'wipro_process', 'tcs_process', 'capgemini_process','cognizant_process','nagarro_process','sumsung_process','amazon_process','infosys_process'])
     if 'sumsung_process' in option:
         c1,c2=st.columns(2)
         with c1:
@@ -148,7 +148,7 @@ with st.container():
     if 'capgemini_process' in option:
         c1,c2=st.columns(2)
         with c1:
-            st.markdown("***Wipro conducts 3 rounds to recruit new employees.***")
+            st.markdown("***Capgemini conducts 3\4 rounds to recruit new employees.***")
             st.markdown("\n 1. Aptitude and Essay Round \n 2. Technical Aptitude Round \n 3. Technical Interview \n 4. HR Interview 2\n")
             st.markdown("\n")
             st.markdown("***Academic Criteria:***")
@@ -159,13 +159,13 @@ with st.container():
     if 'amazon_process' in option:
         c1,c2=st.columns(2)
         with c1:
-            st.markdown("***Wipro conducts 3 rounds to recruit new employees.***")
-            st.markdown("\n 1. Aptitude and Essay Round \n 2. Technical Aptitude Round \n 3. Technical Interview \n 4. HR Interview 2\n")
+            st.markdown("***Amazon conducts 5-6 rounds to select freshers as SDE (SDE-1) in their organization. The following rounds are conducted.***")
+            st.markdown("\n 1. Written Round \n 2. Online Coding Round \n 3. Multiple Technical Rounds \n 4. Hiring Manager Round \n 5. HR Round\n")
             st.markdown("\n")
             st.markdown("***Academic Criteria:***")
-            st.markdown("1. 65 percent or above in B.Tech, Class X, Class XII \n 2. No backlogs at the time of interview.")
+            st.markdown("1. 60 percent or above in B.Tech, Class X, Class XII \n 2. No backlogs at the time of interview.")
         with c2:
-            st.image("https://images.livemint.com/img/2020/08/06/600x338/Capgemini_Logo_New_1596710277634_1596710306780.jpg")
+            st.image("https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210808143540/amazon._CB489535447_-660x133.png")
         st.markdown("---")
     if 'tcs_process' in option:
         c1,c2=st.columns(2)

@@ -154,7 +154,7 @@ with st.container():
             st.markdown("***Academic Criteria:***")
             st.markdown("1. 65 percent or above in B.Tech, Class X, Class XII \n 2. No backlogs at the time of interview.")
         with c2:
-            st.image("Images/Capgemini.png")
+            st.image("https://images.livemint.com/img/2020/08/06/600x338/Capgemini_Logo_New_1596710277634_1596710306780.jpg")
         st.markdown("---")
 
 

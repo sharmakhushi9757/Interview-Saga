@@ -127,7 +127,7 @@ with st.container():
         c1,c2=st.columns(2)
         with c1:
             st.markdown("***Accenture conducts 3-4 rounds to select freshers as SDE in their organisation.***")
-            st.markdown("\n 1. Aptitude test \n 2. Technical Interview \n 3. HR Interview 2\n")
+            st.markdown("\n 1. Aptitude test \n 2. Technical Interview \n 3. HR Interview \n")
             st.markdown("\n")
             st.markdown("***Academic Criteria:***")
             st.markdown("1. 70 percent or above in B.Tech, Class X, Class XII \n 2. No backlogs at the time of interview")
@@ -138,7 +138,7 @@ with st.container():
         c1,c2=st.columns(2)
         with c1:
             st.markdown("***Wipro conducts 3 rounds to recruit new employees.***")
-            st.markdown("\n 1. Online test \n 2. Technical Interview \n 3. HR Interview 2\n")
+            st.markdown("\n 1. Online test \n 2. Technical Interview \n 3. HR Interview \n")
             st.markdown("\n")
             st.markdown("***Academic Criteria:***")
             st.markdown("1. 60 percent or above in B.Tech, Class X, Class XII \n 2. One backlogs at the time of interview allowed")
@@ -149,7 +149,7 @@ with st.container():
         c1,c2=st.columns(2)
         with c1:
             st.markdown("***Capgemini conducts 3\4 rounds to recruit new employees.***")
-            st.markdown("\n 1. Aptitude and Essay Round \n 2. Technical Aptitude Round \n 3. Technical Interview \n 4. HR Interview 2\n")
+            st.markdown("\n 1. Aptitude and Essay Round \n 2. Technical Aptitude Round \n 3. Technical Interview \n 4. HR Interview \n")
             st.markdown("\n")
             st.markdown("***Academic Criteria:***")
             st.markdown("1. 65 percent or above in B.Tech, Class X, Class XII \n 2. No backlogs at the time of interview.")

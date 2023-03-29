@@ -170,24 +170,24 @@ with st.container():
     if 'tcs_process' in option:
         c1,c2=st.columns(2)
         with c1:
-            st.markdown("***Wipro conducts 3 rounds to recruit new employees.***")
-            st.markdown("\n 1. Aptitude and Essay Round \n 2. Technical Aptitude Round \n 3. Technical Interview \n 4. HR Interview 2\n")
+            st.markdown("***TCS conducts 3 rounds to recruit new employees.***")
+            st.markdown("\n 1. Written Round \n 2. Technical Round \n 3. Managerial Round \n 4. HR Round \n")
             st.markdown("\n")
             st.markdown("***Academic Criteria:***")
-            st.markdown("1. 65 percent or above in B.Tech, Class X, Class XII \n 2. No backlogs at the time of interview.")
+            st.markdown("1. 60 percent or above in B.Tech, Class X, Class XII \n 2. No backlogs at the time of interview.")
         with c2:
-            st.image("https://images.livemint.com/img/2020/08/06/600x338/Capgemini_Logo_New_1596710277634_1596710306780.jpg")
+            st.image("https://media.geeksforgeeks.org/wp-content/cdn-uploads/20220705163509/TATA_Consultancy_Services_Logo_blue.png")
         st.markdown("---")
     if 'cognizant_process' in option:
         c1,c2=st.columns(2)
         with c1:
             st.markdown("***Wipro conducts 3 rounds to recruit new employees.***")
-            st.markdown("\n 1. Aptitude and Essay Round \n 2. Technical Aptitude Round \n 3. Technical Interview \n 4. HR Interview 2\n")
+            st.markdown("\n 1. Aptitude Test \n 2. Technical Interview \n 3. HR Interview \n")
             st.markdown("\n")
             st.markdown("***Academic Criteria:***")
-            st.markdown("1. 65 percent or above in B.Tech, Class X, Class XII \n 2. No backlogs at the time of interview.")
+            st.markdown("1. 70 percent or above in B.Tech, Class X, Class XII \n 2. No backlogs at the time of interview.")
         with c2:
-            st.image("https://images.livemint.com/img/2020/08/06/600x338/Capgemini_Logo_New_1596710277634_1596710306780.jpg")
+            st.image("https://th.bing.com/th/id/R.b6a9c3488e298f2b291b6eb5853589ae?rik=dEix17AAze0L5A&riu=http%3a%2f%2fwww.brands2life.com%2fwp-content%2fuploads%2f2014%2f07%2fCognizant-logo.jpg&ehk=sjhnVwCs%2b7Lrl3kAoNbFVplnpOmfyVQXVPcXDx7LM7Q%3d&risl=&pid=ImgRaw&r=0")
         st.markdown("---")
     if 'nagarro_process' in option:
         c1,c2=st.columns(2)
